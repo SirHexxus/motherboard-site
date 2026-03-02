@@ -1,0 +1,31 @@
+{
+  "factions": [
+    {
+      "id": "loyalists",
+      "name": "The Loyalists",
+      "size_pct": "~20% of Argent",
+      "leader": "Priv Maelor Rodek",
+      "description": "The legitimate governing authority of Argent, and the faction with the most resources by a significant margin. The Loyalists believe that strong centralized control is what keeps the city alive against the Fury — and they're becoming increasingly willing to enforce that belief. The violence has escalated in recent months. They don't explain why to anyone outside the inner circle.",
+      "stance": "Governing authority",
+      "tags": ["government", "argent", "military"]
+    },
+    {
+      "id": "unionists",
+      "name": "The Unionists",
+      "size_pct": "~25% of Argent",
+      "leader": "Council of Unions",
+      "description": "A coalition of trade unions representing the crafters, laborers, and skilled workers who keep Argent running. They have numbers and organization, but the Council of Unions is better at opposing things than deciding them. Internal disagreements slow them down. They and the Loyalists cooperate on exactly three things: city defense, stopping riots, and shutting down Agitators. On everything else, the mutual distrust runs deep.",
+      "stance": "Opposition coalition",
+      "tags": ["labor", "argent", "council"]
+    },
+    {
+      "id": "masses",
+      "name": "The Masses",
+      "size_pct": "~55% of Argent",
+      "leader": "None",
+      "description": "The majority of Argent's population — unaffiliated, unorganized, and increasingly angry. Not a faction with leadership or goals, but a pressure system. Agitators with their own agendas move through the Masses like currents, shaping frustrations into something directed. Whoever captures the Masses' momentum first shapes what Argent becomes.",
+      "stance": "Unaligned majority",
+      "tags": ["civilian", "argent", "majority"]
+    }
+  ]
+}

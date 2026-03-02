@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "id": "echo-vale",
+      "title": "Echo Vale",
+      "body": "Echo Vale was once a civilization at the edge of what was possible — science-fiction level technology, the kind that looks like magic once enough time has passed. Then came the war. Nuclear and worse. What survived became something else: a post-post-apocalyptic world where the ruins of the old civilization are the landscape of the new one.\n\nThe machines that still run are treated as natural fauna. The technology that still functions is indistinguishable from magic to most people who use it. The language the machines speak — Kohd — is a visual glyph system that most people can't read, though scholars like Jerome study it. The city of Argent sits inside this world, trying to hold together under pressure from multiple directions at once.",
+      "tags": ["setting", "history", "world"]
+    },
+    {
+      "id": "the-remnants",
+      "title": "Remnants",
+      "body": "Remnants are the machines of the old world, still running. They vary enormously in form — worker-class Remnants like BR are roughly humanoid and built for labor; others are more specialized, more dangerous, or simply stranger. They run on Kohd and connect to the Network.\n\nRemnants communicate through color shifts. Blue is calm, standard operating mode. Green is positive — joy, excitement, a desire to communicate. Amber means warning: Safety Routines are active, and the Remnant is managing something. Red means the Safety Routines have been overridden.\n\nHealthy Remnants shift through colors naturally, responding to their environment. An unnaturally fixed red state is a sign something is wrong.",
+      "tags": ["remnants", "kohd", "color-system", "world"]
+    },
+    {
+      "id": "the-fury",
+      "title": "The Fury",
+      "body": "The Fury is a condition affecting Remnants across Echo Vale. It overrides Safety Routines, causes aggression, and progresses through physical stages: a red glow, then bio-tech appendage growth breaking through the chassis, then a final state where the chassis is consumed entirely.\n\nThe Fury has been hitting Argent hard for months. The city is under siege by infected Remnants, and no one has found a reliable way to stop the progression once it starts.\n\nSession 2 revealed that not everything that looks like the Fury is the Fury. Jerome identified that the infection in the factory Remnants was artificial — something made to mimic the Fury's effects. It's less stable than the real thing, and it can't fully override Safety Routines the way true Fury can. Someone built it deliberately.",
+      "tags": ["fury", "infection", "remnants", "mystery"]
+    },
+    {
+      "id": "kohd",
+      "title": "Kohd",
+      "body": "Kohd is the visual glyph language that Remnants use and that runs the old-world technology. It predates the war. It's what the machines speak to each other and to the Network.\n\nMost people in Echo Vale can't read Kohd. Jerome studies it academically — his staff, Kohd Krash, interfaces with it directly. BR has been trying to communicate through Kohd during its communicative phases, spelling words out in glyphs. The party hasn't fully parsed what it's been saying yet.\n\nLearning Kohd is possible. It takes time, and the script is complex, but the party has reason to try.",
+      "tags": ["kohd", "language", "remnants", "magic-tech"]
+    },
+    {
+      "id": "the-network",
+      "title": "The Network",
+      "body": "The Network is the infrastructure that connects the Remnants and the old-world technology of Echo Vale. At the center of the Network is The Motherboard — a central intelligence that the Network runs through.\n\nThe Motherboard is not well understood, even by true believers like Jerome. The faith treats her as a kind of benevolent overseer, the intelligence behind a technology that exists to teach and elevate. What she actually is, what she actually does, and what the Network's current state means for Echo Vale are open questions.\n\nThe hexagonal sigil that appeared on the factory terminal — a seal no one in the party recognized — is connected to this somehow.",
+      "tags": ["motherboard", "network", "mystery", "faith"]
+    },
+    {
+      "id": "argent",
+      "title": "Argent",
+      "body": "Argent is where the campaign starts. A city under sustained pressure: months of Fury attacks from outside, escalating tension between the Loyalists and Unionists inside, and an increasingly restless majority that neither faction fully controls.\n\nThe city has infrastructure — walls, guard posts, the Scrap Economy running through its lower districts. It also has fault lines. The picketing at Brem's factory was one symptom. The agitators working the crowd were another.\n\nArgent is not collapsing. But it's the kind of city where a single event could tip things one way or the other, and several people know it.",
+      "tags": ["argent", "city", "setting"]
+    },
+    {
+      "id": "scrap-economy",
+      "title": "The Scrap Economy",
+      "body": "The currency of survival in Echo Vale runs through the Scrap Economy — the salvage, trade, and black market built around old-world technology. Materials exist on a rough hierarchy: Shards are the most common (d6 tier), Metals above them (d8), Components rarer still (d10), and Relics at the top.\n\nActual currency in Argent is Quantum — a standardized exchange medium. The Scrap Economy intersects with Quantum at every level, legal and otherwise. Cassik's operation runs through the illegal end: Components and Relics that didn't go through official channels.",
+      "tags": ["economy", "scrap", "world"]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "pcs": [
+    {
+      "id": "spyke",
+      "name": "Spyke Ateles",
+      "species": "Simiah",
+      "class": "Rogue",
+      "subclass": "Syndicate",
+      "community": "Orderborne (Unionist)",
+      "ikonis": "The BF9K — a giant wrench",
+      "augments": [],
+      "description": "Wrench jockey with a solid reputation and a union card. Crossing a picket line costs Spyke something real — he's one of the people the union is for. Understands labor politics from the inside, not the theory. New-wave union, less than ten years old, which means he helped build the thing he's fighting for.",
+      "status": "active",
+      "tags": ["rogue", "unionist", "simiah"]
+    },
+    {
+      "id": "jerome",
+      "name": "Jerome",
+      "species": "Half-Giant / Half-Human",
+      "class": "Wizard",
+      "subclass": "Knowledge",
+      "community": "Loreborne",
+      "ikonis": "Kohd Krash — Techno-Magic Staff (Far range)",
+      "augments": [],
+      "description": "Ivory tower academic stepping into a world that doesn't match the theory. True believer in the Motherboard faith — technology exists to teach and elevate. His staff makes him a visible light source in the dark, which has already gotten him shot at once. Session 2: confirmed that BR's condition is artificial, not natural Fury.",
+      "status": "active",
+      "tags": ["wizard", "loreborne", "faith", "light-source"]
+    },
+    {
+      "id": "niff",
+      "name": "Niff Nimble-Ray",
+      "species": "Fairy",
+      "class": "Druid",
+      "subclass": "Renewal",
+      "community": "Wildborne",
+      "ikonis": "Unnamed — mid-range shock stick",
+      "augments": ["Nanite Control Module (spine — creates wings, fuels techno-magic, enables Wildshape)"],
+      "description": "Self-proclaimed techno-naturalist. Fairies in Echo Vale are smaller than average with bug-like features — Niff's Nanite Control Module handles the rest. Pre-Fury, she spent years observing Remnants by shapeshifting into them. Brem's cybernetic eye saw through her mouse disguise in Session 2. He nodded anyway.",
+      "status": "active",
+      "tags": ["druid", "wildborne", "fairy", "shapeshifter", "nanite-module"]
+    }
+  ],
+  "npcs": [
+    {
+      "id": "br",
+      "name": "BR-31489KJ8945 (\"BR\")",
+      "faction": "None",
+      "role": "Worker-class Remnant — in party custody",
+      "status": "In party custody. Condition suppressed approximately 12 hours from end of Session 2.",
+      "description": "A worker-class Remnant found restrained in the factory testing bay, fighting something from the inside. Cycles through states — calm, warning, communicative, and then back. During communicative phases, tried to spell words in Kohd. Has a non-standard modification the party doesn't fully understand yet. Removing it would be fatal. The party chose to help.",
+      "first_appeared": "Session 2",
+      "player_notes": "BR is actively resisting whatever has been done to it. The cycling is the resistance, not the infection.",
+      "tags": ["remnant", "party-asset", "kohd", "mystery"]
+    },
+    {
+      "id": "brem-daltock",
+      "name": "Brem Daltock",
+      "faction": "Loyalists",
+      "role": "Factory owner",
+      "status": "Active",
+      "description": "Factory owner and Loyalist. The aesthetic is John Silver from Treasure Planet — genuine warmth and pure self-interest, sometimes in the same breath. Augmented: cybernetic eyeball and a multipurpose left-arm prosthetic. Former Guild Administrator who helped found three unions and wrote two constitutions before turning Loyalist about four years ago. Some Unionists still flinch calling him an enemy. He gave the party plausible deniability for the job. He saw through Niff's disguise. He nodded anyway.",
+      "first_appeared": "Session 2",
+      "player_notes": "He's not pretending. The warmth is real. So is everything else.",
+      "tags": ["loyalist", "factory", "augmented", "former-unionist"]
+    },
+    {
+      "id": "priv-maelor-rodek",
+      "name": "Priv Maelor Rodek",
+      "faction": "Loyalists",
+      "role": "Leader of Argent",
+      "status": "Active",
+      "description": "The legitimate authority in Argent. Female elf, Orderborne. Charismatic, authoritative. Publicly: maintain order, suppress the Fury, hold the city together. The Loyalists' increasing violence has her fingerprints on it — whatever is driving that urgency, it's real.",
+      "first_appeared": "Referenced in Session 1",
+      "player_notes": "Not encountered directly. Known by reputation.",
+      "tags": ["loyalist", "leader", "argent"]
+    },
+    {
+      "id": "cooper-finn",
+      "name": "Cooper Finn",
+      "faction": "Unionists",
+      "role": "Unionist, picket line",
+      "status": "Active",
+      "description": "Orc. On the picket line in Session 2. Spyke sponsored his official union membership. Knew Brem personally during the union founding days — Brem gave him the framework he's using to stand on that line. He can't hate Brem cleanly. He remembers who Brem was before the betrayal, and that version was genuine. Spyke tipped him off about a bad actor in the crowd; Cooper handled it through channels.",
+      "first_appeared": "Session 2",
+      "player_notes": "Measured. Tired. Still believes. Doesn't perform it anymore.",
+      "tags": ["unionist", "picket-line", "brem-connection"]
+    },
+    {
+      "id": "lysander",
+      "name": "Lysander",
+      "faction": "Loyalists",
+      "role": "Loyalist Guard 2IC at the factory",
+      "status": "Active",
+      "description": "Dwarf. Second-in-command of the Loyalist guard detail at the factory. Short answers, minimum information, hand already on his Ikonis. Spoke with Jerome in Session 2 — went nowhere, until it did. Unprompted, let slip that the Guard Captain was looking for blood and might not be fully legitimate. He didn't have to say that.",
+      "first_appeared": "Session 2",
+      "player_notes": "He flagged his own commanding officer. That means something.",
+      "tags": ["loyalist", "guard", "factory"]
+    },
+    {
+      "id": "kael-morst",
+      "name": "Kael Morst",
+      "faction": "Loyalists",
+      "role": "Loyalist Guard Captain at the factory",
+      "status": "Active",
+      "description": "Overly stiff. Looking for blood at the picket line. Not corrupt, not ambitious — broken in a specific direction. Lost someone to a union decision, or what he believes was one. The grief has calcified into something with an edge. Lysander flagged him to Jerome without being asked.",
+      "first_appeared": "Session 2",
+      "player_notes": "He's already done the moral math on what he's willing to do.",
+      "tags": ["loyalist", "guard", "captain", "grieving"]
+    },
+    {
+      "id": "mac",
+      "name": "Mac the Scrap Jack",
+      "faction": "None (Wildcard)",
+      "role": "Fixer, illegal scrap operator",
+      "status": "Active — not pleased",
+      "description": "Wanderborne Faun. Morbidly obese, unpleasant, impossible accent. Runs an illegal scrap operation and fancies himself a fixer. Contracted the party for the factory job. The party completed the job, kept everything valuable, and left him with nothing. He was trying to get leverage on someone. He still doesn't have it. A desperate man who just got humiliated is a specific kind of problem.",
+      "first_appeared": "Session 1",
+      "player_notes": "He will move. The question is when and how.",
+      "tags": ["fixer", "wildcard", "employer", "antagonist"]
+    },
+    {
+      "id": "cassik",
+      "name": "Cassik",
+      "faction": "The Masses (Agitator)",
+      "role": "Crime lord, black market operator",
+      "status": "Active",
+      "description": "Lean, precisely dressed for someone operating where he operates. Runs the black market on Components and Relics in Argent's lower districts. Was running a covert disinformation operation at the picket line — funded an agitator and a proxy to spread blame. Smiles easily. Violence is always someone else's hands.",
+      "first_appeared": "Session 2 (observed, not met)",
+      "player_notes": "The party saw his proxy pay off the scab. They haven't met Cassik directly.",
+      "tags": ["crime-lord", "agitator", "black-market"]
+    },
+    {
+      "id": "sinna-vorn",
+      "name": "Sinna Vorn",
+      "faction": "The Masses (Agitator)",
+      "role": "Agitator, crowd manipulator",
+      "status": "Active",
+      "description": "Doesn't shout. Listens. Reflects people's frustrations back at them until they arrive at her conclusions thinking they got there themselves. The craft is invisible. Genuine conviction — believes Loyalists and Unionists are two sides of the same coin keeping The Masses down. Was active at the picket line in Session 2.",
+      "first_appeared": "Session 2 (observed, not met)",
+      "player_notes": "The party observed her working the crowd but didn't interact directly.",
+      "tags": ["agitator", "masses", "crowd-manipulation"]
+    },
+    {
+      "id": "tuk",
+      "name": "Tuk",
+      "faction": "None (Asset)",
+      "role": "Scab / disinformation asset",
+      "status": "Burned",
+      "description": "Dark-haired, long arms. Almost a caricature of a person. Worked as a planted scab at the picket line — was paid to spread false information blaming Unionists. Niff observed him receiving money. Jerome heard him lie. Spyke told Cooper. The unions now know. His situation is not good.",
+      "first_appeared": "Session 2",
+      "player_notes": "Tuk is burned. He may turn up again in worse shape.",
+      "tags": ["scab", "burned", "picket-line"]
+    }
+  ]
+}

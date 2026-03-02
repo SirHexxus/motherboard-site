@@ -1,0 +1,38 @@
+{
+  "sessions": [
+    {
+      "id": "session-1",
+      "number": 1,
+      "title": "The Offer You Can't Refuse",
+      "date": "2026-01-17",
+      "status": "complete",
+      "summary": "Session 0 with roleplay. The party met Mac the Scrap Jack, a fixer operating out of Argent's lower districts. Through a combination of bad luck, worse timing, and Mac's particular brand of leverage, the party found themselves contracted to recover something from a factory on the edge of town. No one left happy, but everyone left with a job.",
+      "highlights": [
+        "First session — characters introduced, world established",
+        "Met Mac the Scrap Jack. Contracted into the factory job.",
+        "The city of Argent introduced: Loyalists vs. Unionists, Fury on the streets"
+      ],
+      "pcs_present": ["spyke", "jerome", "niff"],
+      "notable_npcs": ["Mac the Scrap Jack"],
+      "tags": ["session-0", "argent", "mac", "contract"]
+    },
+    {
+      "id": "session-2",
+      "number": 2,
+      "title": "The Factory Run",
+      "date": "2026-02-28",
+      "status": "complete",
+      "summary": "The party executed the factory job. A tense picket line, a narrow combat victory, and the discovery of something no one expected — a Remnant named BR, restrained in the testing bay, fighting something from the inside. The party chose to help. Mac got nothing. Eight Fear came home with them.",
+      "highlights": [
+        "Picket line navigated — Spyke and Cooper Finn found common ground; Brem closed the factory and gave the party a way in",
+        "Jerome confirmed the Remnant infection isn't Fury — it's something artificial, made to look like it",
+        "The party suppressed BR's condition for roughly 12 hours by pooling everything they had",
+        "A hexagonal sigil appeared on the factory payment terminal — no one knows what it means",
+        "Mac was stiffed. He noticed."
+      ],
+      "pcs_present": ["spyke", "jerome", "niff"],
+      "notable_npcs": ["Brem Daltock", "Cooper Finn", "Lysander", "Kael Morst", "Mac the Scrap Jack", "BR-31489KJ8945"],
+      "tags": ["factory", "br", "combat", "rage-skarring", "brem", "mac", "mystery"]
+    }
+  ]
+}
