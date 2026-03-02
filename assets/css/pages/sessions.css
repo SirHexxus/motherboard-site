@@ -11,9 +11,19 @@
 .session-entry {
 	background-color: var(--elevated);
 	border: 1px solid var(--surface-border);
-	border-left: 3px solid var(--phosphor-dim);
+	border-left: 3px solid var(--surface-border);
 	border-radius: var(--radius-sm);
 	padding: var(--sp-5);
+}
+
+/* Complete sessions: calm/informational — it happened, it's history */
+.session-entry--complete {
+	border-left-color: var(--cherenkov-dim);
+}
+
+/* Upcoming sessions: warning — Safety Routines active, something approaching */
+.session-entry--upcoming {
+	border-left-color: var(--amber-dim);
 }
 
 .session-entry__header {

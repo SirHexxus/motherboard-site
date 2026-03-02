@@ -30,8 +30,8 @@ h1 {
 
 h2 {
 	font-size: 1.75rem;
-	color: var(--phosphor);
-	text-shadow: var(--glow-text-p);
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
 	margin-bottom: var(--sp-5);
 }
 
