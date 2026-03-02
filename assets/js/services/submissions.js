@@ -7,7 +7,7 @@
  * Replace APPS_SCRIPT_URL with your deployed Apps Script URL after Phase 7.
  ******************************************************************************/
 
-const APPS_SCRIPT_URL = 'REPLACE_WITH_APPS_SCRIPT_URL';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBxnlXPS3L0yoQQI8bwKN6uUVJLWUPd9M2L4ueLemU0eH4eijboTC9e1bfarl29MIw2A/exec';
 
 export const submit_form = async (type, fields) => {
   const payload = JSON.stringify({ type, ...fields });
