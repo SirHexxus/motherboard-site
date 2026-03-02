@@ -9,7 +9,7 @@
       "community": "Orderborne (Unionist)",
       "ikonis": "The BF5K — a giant wrench",
       "augments": [],
-      "description": "Wrench jockey with a solid reputation and a union card. Crossing a picket line costs Spyke something real — he's one of the people the union is for. Understands labor politics from the inside, not the theory. New-wave union, less than ten years old, which means he helped build the thing he's fighting for. His older brother is a Loyalist. His father was killed in an incident blamed on a Loyalist Guardsman — evidence was circumstantial, and the case went nowhere.",
+      "description": "Wrench jockey with a solid reputation and a union card. Member of one of Argent's new-wave labor unions — less than ten years old, which means he helped build the thing he fights for. Understands labor politics from the inside, not the theory. His older brother is a Loyalist. His father was killed in an incident blamed on a Loyalist Guardsman — evidence was circumstantial, and the case went nowhere.",
       "status": "active",
       "tags": ["rogue", "unionist", "simiah"]
     },
@@ -22,9 +22,9 @@
       "community": "Loreborne",
       "ikonis": "Kohd Krash — Techno-Magic Staff (Far range)",
       "augments": [],
-      "description": "Ivory tower academic stepping into a world that doesn't match the theory. True believer in the Motherboard faith — and ambitious. Right now the faith and the ambition point in the same direction. All his grimoires are loaded on a future-tech tablet that doubles as a spellcasting prop. His staff makes him a visible light source in the dark. Session 2: confirmed the Foreman's Kohd had been deliberately overwritten by an unknown author — someone wrote this.",
+      "description": "Ivory tower academic stepping into a world that doesn't match the theory. True believer in the Motherboard faith — and ambitious. Right now the faith and the ambition point in the same direction. All his grimoires are loaded on a future-tech tablet that doubles as a spellcasting prop — the faith and the performance are already blurred for him. He wants to matter: within the faith, within the world, to the Motherboard herself.",
       "status": "active",
-      "tags": ["wizard", "loreborne", "faith", "light-source"]
+      "tags": ["wizard", "loreborne", "faith"]
     },
     {
       "id": "niff",
@@ -35,7 +35,7 @@
       "community": "Wildborne",
       "ikonis": "Shocking Touch — shock stick, Very Close range",
       "augments": ["Nanite Control Module (spine — creates wings, fuels techno-magic, enables Wildshape)"],
-      "description": "Self-proclaimed techno-naturalist. Fairies in Echo Vale are smaller than average with bug-like features — Niff's Nanite Control Module handles the rest. Pre-Fury, she spent years observing Remnants by shapeshifting into them. Tends to forget people's names and faces — people are less interesting to her than animals or Remnants. Brem's cybernetic eye saw through her mouse disguise in Session 2. He nodded anyway.",
+      "description": "Self-proclaimed techno-naturalist. Fairies in Echo Vale are smaller than average with bug-like features — Niff's Nanite Control Module handles the rest: wings, techno-magic, and the ability to Wildshape into Remnant forms. Spent years observing Remnants by shifting into them before the Fury made that dangerous. Tends to forget people's names and faces. Her attention genuinely lives somewhere else.",
       "status": "active",
       "tags": ["druid", "wildborne", "fairy", "shapeshifter", "nanite-module"]
     }
@@ -47,7 +47,7 @@
       "faction": "None",
       "role": "Worker-class Remnant — in party custody",
       "status": "In party custody. Condition suppressed approximately 12 hours from end of Session 2.",
-      "description": "A worker-class Remnant found restrained in the factory testing bay, fighting something from the inside. Cycles through states — calm, warning, communicative, and then back. During communicative phases, tried to spell words in Kohd. Has a non-standard modification the party doesn't fully understand yet. Removing it would be fatal. The party chose to help.",
+      "description": "A worker-class Remnant in party custody, fighting something from the inside. Cycles through states — calm, warning, communicative, and back again. During communicative phases, tries to spell words in Kohd. Carries a non-standard modification that the party doesn't fully understand. Removing it would be fatal.",
       "first_appeared": "Session 2",
       "player_notes": "BR is actively resisting whatever has been done to it. The cycling is the resistance, not the infection.",
       "tags": ["remnant", "party-asset", "kohd", "mystery"]
@@ -58,7 +58,7 @@
       "faction": "Loyalists",
       "role": "Factory owner",
       "status": "Active",
-      "description": "Factory owner and Loyalist. The aesthetic is John Silver from Treasure Planet — genuine warmth and pure self-interest, sometimes in the same breath. Augmented: cybernetic right eyeball and a multipurpose left-arm prosthetic. Former Guild Administrator who helped found three unions and wrote two constitutions before turning Loyalist about four years ago. Some Unionists still flinch calling him an enemy. He gave the party plausible deniability for the job. He saw through Niff's disguise. He nodded anyway.",
+      "description": "Factory owner and Loyalist. Genuine warmth and pure self-interest, sometimes in the same breath — he never pretends or postures. Augmented: cybernetic right eyeball and a multipurpose left-arm prosthetic. Former Guild Administrator who helped found three unions and wrote two constitutions before turning Loyalist about four years ago. Some Unionists still flinch calling him an enemy.",
       "first_appeared": "Session 2",
       "player_notes": "He's not pretending. The warmth is real. So is everything else.",
       "tags": ["loyalist", "factory", "augmented", "former-unionist"]
@@ -69,7 +69,7 @@
       "faction": "Loyalists",
       "role": "Leader of Argent",
       "status": "Active",
-      "description": "The legitimate authority in Argent. Female elf, Orderborne. Charismatic, authoritative. Publicly: maintain order, suppress the Fury, hold the city together. The Loyalists' increasing violence has her fingerprints on it — whatever is driving that urgency, it's real.",
+      "description": "The legitimate authority in Argent. Female elf, Orderborne. Charismatic and authoritative — not cruel, but clearly operating under pressure. Publicly: maintain order, suppress the Fury, hold the city together. The Loyalists' increasing violence has her fingerprints on it, and whatever is driving that urgency, it's real.",
       "first_appeared": "Session 1",
       "player_notes": "Met the party at Mac's shop — a clandestine meeting, not an accident. She gave them the job.",
       "tags": ["loyalist", "leader", "argent"]
@@ -80,7 +80,7 @@
       "faction": "Unionists",
       "role": "Unionist, picket line",
       "status": "Active",
-      "description": "Orc. On the picket line in Session 2. Spyke sponsored his official union membership. Knew Brem personally during the union founding days — Brem gave him the framework he's using to stand on that line. He can't hate Brem cleanly. He remembers who Brem was before the betrayal, and that version was genuine. Spyke tipped him off about a bad actor in the crowd; Cooper handled it through channels.",
+      "description": "Orc Unionist. Spyke sponsored his official union membership. Knew Brem personally during the union founding days — Brem gave him the framework he uses to stand where he stands now. He can't hate Brem cleanly. He remembers who Brem was before the betrayal, and that version was genuine. Measured. Tired. Still believes. Doesn't perform it anymore.",
       "first_appeared": "Session 2",
       "player_notes": "Measured. Tired. Still believes. Doesn't perform it anymore.",
       "tags": ["unionist", "picket-line", "brem-connection"]
@@ -91,7 +91,7 @@
       "faction": "Loyalists",
       "role": "Loyalist Guard 2IC at the factory",
       "status": "Active",
-      "description": "Dwarf. Second-in-command of the Loyalist guard detail at the factory. Short answers, minimum information, hand already on his Ikonis. Spoke with Jerome in Session 2 — went nowhere, until it did. Unprompted, let slip that the Guard Captain was looking for blood and might not be fully legitimate. He didn't have to say that.",
+      "description": "Dwarf. Loyalist Guard 2IC at the factory. Projects indifference — short answers, minimum information, hand already on his Ikonis. Not the type to volunteer more than he has to. But he has his own concerns about where things are heading, and occasionally that shows.",
       "first_appeared": "Session 2",
       "player_notes": "He flagged his own commanding officer. That means something.",
       "tags": ["loyalist", "guard", "factory"]
@@ -102,7 +102,7 @@
       "faction": "Loyalists",
       "role": "Loyalist Guard Captain at the factory",
       "status": "Active",
-      "description": "Overly stiff. Looking for blood at the picket line. Not corrupt, not ambitious — broken in a specific direction. Lost someone to a union decision, or what he believes was one. The grief has calcified into something with an edge. Lysander flagged him to Jerome without being asked.",
+      "description": "Loyalist Guard Captain. Rigid, humorless, and looking for a reason to escalate. There's something off about him — not corrupt exactly, but not entirely operating within his authority either. His own second-in-command said so.",
       "first_appeared": "Session 2",
       "player_notes": "He's already done the moral math on what he's willing to do.",
       "tags": ["loyalist", "guard", "captain", "grieving"]
@@ -113,7 +113,7 @@
       "faction": "None (Wildcard)",
       "role": "Fixer, illegal scrap operator",
       "status": "Active — unaware",
-      "description": "Wanderborne Faun. Morbidly obese, unpleasant, impossible accent. Runs an illegal scrap operation and fancies himself a fixer. Called the party to his shop in Session 1 — the Priv was already there, using Mac's place for a clandestine meeting. The party completed the job, kept everything valuable, and left him with nothing. He doesn't know that yet. He was trying to get leverage on someone. He still doesn't have it. When he figures it out, a desperate man who just got humiliated is a specific kind of problem.",
+      "description": "Wanderborne Faun. Morbidly obese, unpleasant, impossible accent. Runs an illegal scrap operation and fancies himself a fixer. Perpetually in over his head, perpetually looking for leverage on someone, perpetually getting outmaneuvered. Connects people who need things with people who have them — as long as neither party looks too closely at the arrangement.",
       "first_appeared": "Session 1",
       "player_notes": "He doesn't know yet. He will. The question is when and how he moves.",
       "tags": ["fixer", "wildcard", "employer", "antagonist"]
@@ -124,7 +124,7 @@
       "faction": "None (Asset)",
       "role": "Scab / disinformation asset",
       "status": "Burned",
-      "description": "Dark-haired, long arms. Almost a caricature of a person. Worked as a planted scab at the picket line — was paid to spread false information blaming Unionists. Niff observed him receiving money. Jerome heard him lie. Spyke told Cooper. The unions now know. His situation is not good.",
+      "description": "Dark-haired, long arms. Almost a caricature of a person. Was working as a planted scab — paid to spread false information blaming Unionists for trouble at the picket line. He's been made. The unions know. His situation is not good.",
       "first_appeared": "Session 2",
       "player_notes": "Tuk is burned. He may turn up again in worse shape.",
       "tags": ["scab", "burned", "picket-line"]
