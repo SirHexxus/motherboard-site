@@ -7,22 +7,22 @@
       "class": "Rogue",
       "subclass": "Syndicate",
       "community": "Orderborne (Unionist)",
-      "ikonis": "The BF9K — a giant wrench",
+      "ikonis": "The BF5K — a giant wrench",
       "augments": [],
-      "description": "Wrench jockey with a solid reputation and a union card. Crossing a picket line costs Spyke something real — he's one of the people the union is for. Understands labor politics from the inside, not the theory. New-wave union, less than ten years old, which means he helped build the thing he's fighting for.",
+      "description": "Wrench jockey with a solid reputation and a union card. Crossing a picket line costs Spyke something real — he's one of the people the union is for. Understands labor politics from the inside, not the theory. New-wave union, less than ten years old, which means he helped build the thing he's fighting for. His older brother is a Loyalist. His father was killed in an incident blamed on a Loyalist Guardsman — evidence was circumstantial, and the case went nowhere.",
       "status": "active",
       "tags": ["rogue", "unionist", "simiah"]
     },
     {
       "id": "jerome",
-      "name": "Jerome",
+      "name": "Brother Jerome",
       "species": "Half-Giant / Half-Human",
       "class": "Wizard",
       "subclass": "Knowledge",
       "community": "Loreborne",
       "ikonis": "Kohd Krash — Techno-Magic Staff (Far range)",
       "augments": [],
-      "description": "Ivory tower academic stepping into a world that doesn't match the theory. True believer in the Motherboard faith — technology exists to teach and elevate. His staff makes him a visible light source in the dark, which has already gotten him shot at once. Session 2: confirmed that BR's condition is artificial, not natural Fury.",
+      "description": "Ivory tower academic stepping into a world that doesn't match the theory. True believer in the Motherboard faith — and ambitious. Right now the faith and the ambition point in the same direction. All his grimoires are loaded on a future-tech tablet that doubles as a spellcasting prop. His staff makes him a visible light source in the dark. Session 2: confirmed the Foreman's Kohd had been deliberately overwritten by an unknown author — someone wrote this.",
       "status": "active",
       "tags": ["wizard", "loreborne", "faith", "light-source"]
     },
@@ -33,9 +33,9 @@
       "class": "Druid",
       "subclass": "Renewal",
       "community": "Wildborne",
-      "ikonis": "Unnamed — mid-range shock stick",
+      "ikonis": "Unnamed — shock stick, Very Close range",
       "augments": ["Nanite Control Module (spine — creates wings, fuels techno-magic, enables Wildshape)"],
-      "description": "Self-proclaimed techno-naturalist. Fairies in Echo Vale are smaller than average with bug-like features — Niff's Nanite Control Module handles the rest. Pre-Fury, she spent years observing Remnants by shapeshifting into them. Brem's cybernetic eye saw through her mouse disguise in Session 2. He nodded anyway.",
+      "description": "Self-proclaimed techno-naturalist. Fairies in Echo Vale are smaller than average with bug-like features — Niff's Nanite Control Module handles the rest. Pre-Fury, she spent years observing Remnants by shapeshifting into them. Tends to forget people's names and faces — people are less interesting to her than animals or Remnants. Brem's cybernetic eye saw through her mouse disguise in Session 2. He nodded anyway.",
       "status": "active",
       "tags": ["druid", "wildborne", "fairy", "shapeshifter", "nanite-module"]
     }
@@ -58,7 +58,7 @@
       "faction": "Loyalists",
       "role": "Factory owner",
       "status": "Active",
-      "description": "Factory owner and Loyalist. The aesthetic is John Silver from Treasure Planet — genuine warmth and pure self-interest, sometimes in the same breath. Augmented: cybernetic eyeball and a multipurpose left-arm prosthetic. Former Guild Administrator who helped found three unions and wrote two constitutions before turning Loyalist about four years ago. Some Unionists still flinch calling him an enemy. He gave the party plausible deniability for the job. He saw through Niff's disguise. He nodded anyway.",
+      "description": "Factory owner and Loyalist. The aesthetic is John Silver from Treasure Planet — genuine warmth and pure self-interest, sometimes in the same breath. Augmented: cybernetic right eyeball and a multipurpose left-arm prosthetic. Former Guild Administrator who helped found three unions and wrote two constitutions before turning Loyalist about four years ago. Some Unionists still flinch calling him an enemy. He gave the party plausible deniability for the job. He saw through Niff's disguise. He nodded anyway.",
       "first_appeared": "Session 2",
       "player_notes": "He's not pretending. The warmth is real. So is everything else.",
       "tags": ["loyalist", "factory", "augmented", "former-unionist"]
