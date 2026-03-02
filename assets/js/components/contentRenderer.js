@@ -199,8 +199,14 @@ const WORLD_REMNANT_CYCLE_HTML = `
     <span class="remnant-cycle__label remnant-cycle__label--amber">Amber</span>
     <span class="remnant-cycle__arrow">&#8594;</span>
     <span class="remnant-cycle__label remnant-cycle__label--red">Red</span>
-    <span class="remnant-cycle__note">
-      Calm &rarr; Communicative &rarr; Warning &rarr; Fury
+    <span class="remnant-cycle__cues">
+      <span class="remnant-cycle__label remnant-cycle__label--blue">Calm</span>
+      <span class="remnant-cycle__arrow">&#8594;</span>
+      <span class="remnant-cycle__label remnant-cycle__label--green">Communicative</span>
+      <span class="remnant-cycle__arrow">&#8594;</span>
+      <span class="remnant-cycle__label remnant-cycle__label--amber">Warning</span>
+      <span class="remnant-cycle__arrow">&#8594;</span>
+      <span class="remnant-cycle__label remnant-cycle__label--red">Fury</span>
     </span>
   </div>`;
 
@@ -219,10 +225,13 @@ export const render_world_sections = (container, sections) => {
         </div>`
       : '';
 
-    // Split body on double-newlines to render as separate paragraphs
-    const paragraphs = s.body.split(/\n\n+/).map(
-      (para) => `<p>${escape_html(para.trim())}</p>`
-    ).join('');
+    // body_html: trusted markup (GM-supplied) rendered directly
+    // body: plain text, split on double-newlines into escaped paragraphs
+    const paragraphs = s.body_html
+      ? s.body_html
+      : s.body.split(/\n\n+/).map(
+          (para) => `<p>${escape_html(para.trim())}</p>`
+        ).join('');
 
     const cycle_html = s.show_remnant_cycle ? WORLD_REMNANT_CYCLE_HTML : '';
 

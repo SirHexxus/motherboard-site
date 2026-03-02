@@ -181,3 +181,15 @@
 	color: var(--text-secondary);
 	letter-spacing: 0.06em;
 }
+
+/* Second row of cycle: emotional cues, colored to match their state */
+.remnant-cycle__cues {
+	flex-basis: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--sp-1);
+	padding-top: var(--sp-2);
+	margin-top: var(--sp-1);
+	border-top: 1px solid var(--surface-border);
+}
