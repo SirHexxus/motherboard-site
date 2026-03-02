@@ -1,0 +1,182 @@
+'use strict';
+
+import { format_date, escape_html } from '../utils/format.js';
+
+/******************************************************************************
+ * Content Renderer
+ * Each function takes a container element + data array and builds DOM.
+ * Inserts into [data-content-region] placeholders in HTML.
+ ******************************************************************************/
+
+// ── Sessions ──────────────────────────────────────────────────────────────────
+
+export const render_session_list = (container, sessions) => {
+  if (!sessions || !sessions.length) {
+    container.innerHTML = '<p class="text-secondary">No sessions recorded yet.</p>';
+    return;
+  }
+
+  // Most recent first
+  const sorted = [...sessions].sort((a, b) => b.number - a.number);
+
+  const html = sorted.map((s) => {
+    const highlights_html = s.highlights && s.highlights.length
+      ? `<div class="session-entry__highlights">
+          <p class="session-entry__highlights-heading">Session highlights</p>
+          <ul class="session-entry__highlight-list">
+            ${s.highlights.map((h) => `<li>${escape_html(h)}</li>`).join('')}
+          </ul>
+        </div>`
+      : '';
+
+    const npcs_html = s.notable_npcs && s.notable_npcs.length
+      ? `<div class="card__meta">
+          <span class="text-xs font-mono text-secondary text-upper letter-wide">NPCs: </span>
+          ${s.notable_npcs.map((n) => `<span class="badge badge--muted">${escape_html(n)}</span>`).join('')}
+        </div>`
+      : '';
+
+    const tags_html = s.tags && s.tags.length
+      ? s.tags.map((t) => `<span class="badge badge--muted">${escape_html(t)}</span>`).join('')
+      : '';
+
+    const status_badge = s.status === 'complete'
+      ? '<span class="badge badge--phosphor">Complete</span>'
+      : '<span class="badge badge--amber">Upcoming</span>';
+
+    return `
+      <article class="session-entry">
+        <div class="session-entry__header">
+          <div>
+            <p class="session-entry__number">Session ${escape_html(String(s.number))}</p>
+            <h2 class="session-entry__title">${escape_html(s.title)}</h2>
+            <time class="session-entry__date" datetime="${escape_html(s.date)}">
+              ${format_date(s.date)}
+            </time>
+          </div>
+          ${status_badge}
+        </div>
+        <p class="session-entry__summary">${escape_html(s.summary)}</p>
+        ${highlights_html}
+        ${npcs_html}
+        ${tags_html ? `<div class="card__meta">${tags_html}</div>` : ''}
+      </article>`;
+  }).join('');
+
+  container.innerHTML = `<div class="session-list">${html}</div>`;
+};
+
+// ── Characters ────────────────────────────────────────────────────────────────
+
+const render_char_card = (c, is_pc) => {
+  const tags_html = c.tags && c.tags.length
+    ? `<div class="char-card__tags">
+        ${c.tags.map((t) => `<span class="badge badge--muted">${escape_html(t)}</span>`).join('')}
+      </div>`
+    : '';
+
+  const role_line = is_pc
+    ? `${escape_html(c.class)} / ${escape_html(c.subclass)}`
+    : escape_html(c.role || c.faction || '');
+
+  return `
+    <article class="char-card${is_pc ? ' char-card--pc' : ''}">
+      <h3 class="char-card__name">${escape_html(c.name)}</h3>
+      <p class="char-card__role">${role_line}</p>
+      <p class="char-card__description">${escape_html(c.description)}</p>
+      ${tags_html}
+    </article>`;
+};
+
+export const render_character_grid = (container, pcs, npcs) => {
+  const pcs_html = pcs && pcs.length
+    ? `<section class="characters-section">
+        <h2 class="characters-section__heading">The Party</h2>
+        <div class="character-grid">
+          ${pcs.map((c) => render_char_card(c, true)).join('')}
+        </div>
+      </section>`
+    : '';
+
+  const npcs_html = npcs && npcs.length
+    ? `<section class="characters-section">
+        <h2 class="characters-section__heading">Notable NPCs</h2>
+        <div class="npc-grid">
+          ${npcs.map((c) => render_char_card(c, false)).join('')}
+        </div>
+      </section>`
+    : '';
+
+  container.innerHTML = pcs_html + npcs_html;
+};
+
+// ── Factions ──────────────────────────────────────────────────────────────────
+
+export const render_faction_list = (container, factions) => {
+  if (!factions || !factions.length) {
+    container.innerHTML = '<p class="text-secondary">No factions on record.</p>';
+    return;
+  }
+
+  const html = factions.map((f) => {
+    const size_html = f.size_pct
+      ? `<span class="badge badge--cherenkov">${escape_html(f.size_pct)}</span>`
+      : '';
+
+    const stance_html = f.stance
+      ? `<span class="badge badge--amber">${escape_html(f.stance)}</span>`
+      : '';
+
+    return `
+      <article class="faction-entry">
+        <div class="faction-entry__header">
+          <div>
+            <h2 class="faction-entry__name">${escape_html(f.name)}</h2>
+            <p class="faction-entry__meta">
+              ${f.leader ? 'Led by ' + escape_html(f.leader) : ''}
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            ${size_html}
+            ${stance_html}
+          </div>
+        </div>
+        <p class="faction-entry__description">${escape_html(f.description)}</p>
+      </article>`;
+  }).join('');
+
+  container.innerHTML = `<div class="faction-list">${html}</div>`;
+};
+
+// ── World ─────────────────────────────────────────────────────────────────────
+
+export const render_world_sections = (container, sections) => {
+  if (!sections || !sections.length) {
+    container.innerHTML = '<p class="text-secondary">No world content yet.</p>';
+    return;
+  }
+
+  const html = sections.map((s) => {
+    const tags_html = s.tags && s.tags.length
+      ? `<div class="world-section__tags">
+          ${s.tags.map((t) => `<span class="badge badge--muted">${escape_html(t)}</span>`).join('')}
+        </div>`
+      : '';
+
+    // Split body on double-newlines to render as separate paragraphs
+    const paragraphs = s.body.split(/\n\n+/).map(
+      (para) => `<p>${escape_html(para.trim())}</p>`
+    ).join('');
+
+    return `
+      <section class="world-section" id="${escape_html(s.id)}">
+        <h2 class="world-section__title">${escape_html(s.title)}</h2>
+        <div class="world-section__body">
+          ${paragraphs}
+        </div>
+        ${tags_html}
+      </section>`;
+  }).join('');
+
+  container.innerHTML = `<div class="world-sections">${html}</div>`;
+};
