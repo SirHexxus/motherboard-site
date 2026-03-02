@@ -97,7 +97,7 @@ const REMNANT_CYCLE_HTML = `
     <span class="remnant-cycle__arrow">&#8594;</span>
     <span class="remnant-cycle__label remnant-cycle__label--red">Red&hellip;</span>
     <span class="remnant-cycle__note">
-      Rage-Skarring suppressed &mdash; currently cycling Blue &rarr; Green
+      Condition suppressed &mdash; currently cycling Blue &rarr; Green
     </span>
   </div>`;
 
