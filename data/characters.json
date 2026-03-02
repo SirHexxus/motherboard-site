@@ -119,28 +119,6 @@
       "tags": ["fixer", "wildcard", "employer", "antagonist"]
     },
     {
-      "id": "cassik",
-      "name": "Cassik",
-      "faction": "The Masses (Agitator)",
-      "role": "Crime lord, black market operator",
-      "status": "Active",
-      "description": "Lean, precisely dressed for someone operating where he operates. Runs the black market on Components and Relics in Argent's lower districts. Was running a covert disinformation operation at the picket line — funded an agitator and a proxy to spread blame. Smiles easily. Violence is always someone else's hands.",
-      "first_appeared": "Session 2 (observed, not met)",
-      "player_notes": "The party saw his proxy pay off the scab. They haven't met Cassik directly.",
-      "tags": ["crime-lord", "agitator", "black-market"]
-    },
-    {
-      "id": "sinna-vorn",
-      "name": "Sinna Vorn",
-      "faction": "The Masses (Agitator)",
-      "role": "Agitator, crowd manipulator",
-      "status": "Active",
-      "description": "Doesn't shout. Listens. Reflects people's frustrations back at them until they arrive at her conclusions thinking they got there themselves. The craft is invisible. Genuine conviction — believes Loyalists and Unionists are two sides of the same coin keeping The Masses down. Was active at the picket line in Session 2.",
-      "first_appeared": "Session 2 (observed, not met)",
-      "player_notes": "The party observed her working the crowd but didn't interact directly.",
-      "tags": ["agitator", "masses", "crowd-manipulation"]
-    },
-    {
       "id": "tuk",
       "name": "Tuk",
       "faction": "None (Asset)",
