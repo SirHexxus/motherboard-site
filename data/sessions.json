@@ -6,14 +6,14 @@
       "title": "The Offer You Can't Refuse",
       "date": "2026-01-17",
       "status": "complete",
-      "summary": "Session 0 with roleplay. The party met Mac the Scrap Jack, a fixer operating out of Argent's lower districts. Through a combination of bad luck, worse timing, and Mac's particular brand of leverage, the party found themselves contracted to recover something from a factory on the edge of town. No one left happy, but everyone left with a job.",
+      "summary": "Session 0 with roleplay. Mac the Scrap Jack called the party to his shop. The Priv was already there — a clandestine meeting, not an accident. She gave them the job. No one left happy, but everyone left with a contract.",
       "highlights": [
         "First session — characters introduced, world established",
-        "Met Mac the Scrap Jack. Contracted into the factory job.",
+        "Mac called the party in. The Priv was waiting. She gave them the factory job.",
         "The city of Argent introduced: Loyalists vs. Unionists, Fury on the streets"
       ],
       "pcs_present": ["spyke", "jerome", "niff"],
-      "notable_npcs": ["Mac the Scrap Jack"],
+      "notable_npcs": ["Mac the Scrap Jack", "Priv Maelor Rodek"],
       "tags": ["session-0", "argent", "mac", "contract"]
     },
     {

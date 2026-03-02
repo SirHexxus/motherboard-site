@@ -70,8 +70,8 @@
       "role": "Leader of Argent",
       "status": "Active",
       "description": "The legitimate authority in Argent. Female elf, Orderborne. Charismatic, authoritative. Publicly: maintain order, suppress the Fury, hold the city together. The Loyalists' increasing violence has her fingerprints on it — whatever is driving that urgency, it's real.",
-      "first_appeared": "Referenced in Session 1",
-      "player_notes": "Not encountered directly. Known by reputation.",
+      "first_appeared": "Session 1",
+      "player_notes": "Met the party at Mac's shop — a clandestine meeting, not an accident. She gave them the job.",
       "tags": ["loyalist", "leader", "argent"]
     },
     {
@@ -113,7 +113,7 @@
       "faction": "None (Wildcard)",
       "role": "Fixer, illegal scrap operator",
       "status": "Active — not pleased",
-      "description": "Wanderborne Faun. Morbidly obese, unpleasant, impossible accent. Runs an illegal scrap operation and fancies himself a fixer. Contracted the party for the factory job. The party completed the job, kept everything valuable, and left him with nothing. He was trying to get leverage on someone. He still doesn't have it. A desperate man who just got humiliated is a specific kind of problem.",
+      "description": "Wanderborne Faun. Morbidly obese, unpleasant, impossible accent. Runs an illegal scrap operation and fancies himself a fixer. Called the party to his shop in Session 1 — the Priv was already there, using Mac's place for a clandestine meeting. The party completed the job, kept everything valuable, and left him with nothing. He was trying to get leverage on someone. He still doesn't have it. A desperate man who just got humiliated is a specific kind of problem.",
       "first_appeared": "Session 1",
       "player_notes": "He will move. The question is when and how.",
       "tags": ["fixer", "wildcard", "employer", "antagonist"]
