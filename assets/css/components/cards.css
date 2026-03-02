@@ -181,6 +181,82 @@
 	line-height: 1.5;
 }
 
+/* ── Remnant state cycle ─────────────────────────────────── */
+
+.remnant-cycle {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--sp-1);
+	margin-top: var(--sp-4);
+	padding: var(--sp-3);
+	background-color: var(--deep);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-sm);
+}
+
+.remnant-cycle__label {
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.remnant-cycle__label--red {
+	color: var(--fury);
+	text-shadow: var(--glow-text-f);
+}
+
+.remnant-cycle__label--amber {
+	color: var(--amber);
+	text-shadow: var(--glow-text-a);
+}
+
+.remnant-cycle__label--blue {
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
+}
+
+.remnant-cycle__label--green {
+	color: var(--phosphor);
+	text-shadow: var(--glow-text-p);
+}
+
+.remnant-cycle__arrow {
+	color: var(--text-secondary);
+	font-size: 0.6rem;
+	opacity: 0.5;
+}
+
+/* Suppressed state: dim the red and amber, highlight the blue+green */
+.remnant-cycle--suppressed .remnant-cycle__label--red,
+.remnant-cycle--suppressed .remnant-cycle__label--amber {
+	opacity: 0.35;
+	text-shadow: none;
+}
+
+.remnant-cycle__note {
+	flex-basis: 100%;
+	margin-top: var(--sp-2);
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	color: var(--text-secondary);
+	letter-spacing: 0.06em;
+}
+
+/* Second row of cycle: emotional cues, colored to match their state */
+.remnant-cycle__cues {
+	flex-basis: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--sp-1);
+	padding-top: var(--sp-2);
+	margin-top: var(--sp-1);
+	border-top: 1px solid var(--surface-border);
+}
+
 /* ── Badges ──────────────────────────────────────────────── */
 
 .badge {
