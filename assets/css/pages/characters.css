@@ -76,7 +76,7 @@
 	gap: var(--sp-2);
 }
 
-/* PC variant */
+/* PC variant — communicative, interactive */
 .char-card--pc {
 	border-top: 3px solid var(--phosphor);
 }
@@ -84,4 +84,100 @@
 .char-card--pc .char-card__name {
 	color: var(--phosphor);
 	text-shadow: var(--glow-text-p);
+}
+
+/* NPC faction variants */
+
+/* Loyalists: Amber — authority, Safety Routines active. Handle with care. */
+.char-card--loyalist {
+	border-top: 3px solid var(--amber-dim);
+}
+
+/* Unionists: Phosphor — communicative, aligned with the party's world */
+.char-card--unionist {
+	border-top: 3px solid var(--phosphor-dim);
+}
+
+/* The Masses / Agitators: Fury — threat vector, unknown intent */
+.char-card--masses {
+	border-top: 3px solid var(--fury-dim);
+}
+
+/* Wildcards: Fury — volatile, self-interested, not safe */
+.char-card--wildcard {
+	border-top: 3px solid var(--fury-dim);
+}
+
+/* Remnant / party asset: Cherenkov — standard operating, or trying to be */
+.char-card--asset {
+	border-top: 3px solid var(--cherenkov-dim);
+}
+
+.char-card--asset .char-card__name {
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
+}
+
+/* ── Remnant state cycle ─────────────────────────────────── */
+
+.remnant-cycle {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--sp-1);
+	margin-top: var(--sp-4);
+	padding: var(--sp-3);
+	background-color: var(--deep);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-sm);
+}
+
+.remnant-cycle__label {
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.remnant-cycle__label--red {
+	color: var(--fury);
+	text-shadow: var(--glow-text-f);
+}
+
+.remnant-cycle__label--amber {
+	color: var(--amber);
+	text-shadow: var(--glow-text-a);
+}
+
+.remnant-cycle__label--blue {
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
+}
+
+.remnant-cycle__label--green {
+	color: var(--phosphor);
+	text-shadow: var(--glow-text-p);
+}
+
+.remnant-cycle__arrow {
+	color: var(--text-secondary);
+	font-size: 0.6rem;
+	opacity: 0.5;
+}
+
+/* Suppressed state: dim the red and amber, highlight the blue+green */
+.remnant-cycle--suppressed .remnant-cycle__label--red,
+.remnant-cycle--suppressed .remnant-cycle__label--amber {
+	opacity: 0.35;
+	text-shadow: none;
+}
+
+.remnant-cycle__note {
+	flex-basis: 100%;
+	margin-top: var(--sp-2);
+	font-family: var(--font-mono);
+	font-size: 0.65rem;
+	color: var(--text-secondary);
+	letter-spacing: 0.06em;
 }
