@@ -1,0 +1,59 @@
+/* ============================================================
+   Navigation — Motherboard Campaign Wiki
+   Tab navigation used on submit page and content pages.
+   (Site-level nav lives in layout.css)
+   ============================================================ */
+
+/* ── Tab nav ─────────────────────────────────────────────── */
+
+.tab-nav {
+	border-bottom: 1px solid var(--surface-border);
+	margin-bottom: var(--sp-6);
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.tab-nav__list {
+	display: flex;
+	gap: 0;
+}
+
+.tab-nav__btn {
+	display: block;
+	padding: var(--sp-3) var(--sp-5);
+	background: none;
+	border: none;
+	border-bottom: 2px solid transparent;
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-secondary);
+	cursor: pointer;
+	white-space: nowrap;
+	transition:
+		color var(--transition-fast),
+		border-color var(--transition-fast),
+		text-shadow var(--transition-fast);
+}
+
+.tab-nav__btn:hover {
+	color: var(--phosphor);
+}
+
+.tab-nav__btn.is-active {
+	color: var(--phosphor);
+	border-bottom-color: var(--phosphor);
+	text-shadow: var(--glow-text-p);
+}
+
+/* ── Tab panels ──────────────────────────────────────────── */
+
+.tab-panel {
+	display: none;
+}
+
+.tab-panel.is-active {
+	display: block;
+}

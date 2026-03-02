@@ -1,0 +1,186 @@
+/* ============================================================
+   Forms — Motherboard Campaign Wiki
+   Inputs, textarea, select, submit button, states.
+   ============================================================ */
+
+/* ── Form group ──────────────────────────────────────────── */
+
+.form__group {
+	margin-bottom: var(--sp-5);
+}
+
+.form__label {
+	display: block;
+	margin-bottom: var(--sp-2);
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--text-secondary);
+}
+
+.form__required {
+	color: var(--fury);
+	margin-left: var(--sp-1);
+}
+
+/* ── Inputs, textarea, select ────────────────────────────── */
+
+.form__input,
+.form__textarea,
+.form__select {
+	display: block;
+	width: 100%;
+	padding: var(--sp-3) var(--sp-4);
+	background-color: var(--elevated);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-sm);
+	color: var(--text-primary);
+	font-family: var(--font-body);
+	font-size: 0.9rem;
+	line-height: 1.5;
+	transition:
+		border-color var(--transition-fast),
+		box-shadow var(--transition-fast);
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+	color: var(--text-secondary);
+	opacity: 0.5;
+}
+
+.form__input:focus,
+.form__textarea:focus,
+.form__select:focus {
+	outline: none;
+	border-color: var(--phosphor-dim);
+	box-shadow: 0 0 0 2px var(--phosphor-fill), var(--glow-p-sm);
+}
+
+.form__textarea {
+	min-height: 140px;
+	resize: vertical;
+}
+
+/* Custom select arrow */
+.form__select {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238AABCC' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right var(--sp-4) center;
+	padding-right: var(--sp-10);
+}
+
+/* ── Submit button ───────────────────────────────────────── */
+
+.form__submit {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--sp-2);
+	padding: var(--sp-3) var(--sp-8);
+	background-color: transparent;
+	border: 1px solid var(--phosphor-border);
+	border-radius: var(--radius-sm);
+	color: var(--phosphor);
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition:
+		background-color var(--transition-fast),
+		box-shadow var(--transition-fast),
+		border-color var(--transition-fast);
+}
+
+.form__submit:hover:not(:disabled) {
+	background-color: var(--phosphor-fill);
+	box-shadow: var(--glow-p-sm);
+	border-color: var(--phosphor);
+}
+
+.form__submit:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+/* Loading state */
+.form__submit.is-loading {
+	pointer-events: none;
+}
+
+.form__submit.is-loading::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid var(--phosphor-border);
+	border-top-color: var(--phosphor);
+	border-radius: 50%;
+	animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg); }
+}
+
+/* ── Success / failure messages ──────────────────────────── */
+
+.form__success,
+.form__failure {
+	display: none;
+	padding: var(--sp-4);
+	border-radius: var(--radius-sm);
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+}
+
+.form__success.is-visible,
+.form__failure.is-visible {
+	display: block;
+}
+
+.form__success {
+	background-color: var(--phosphor-fill);
+	border: 1px solid var(--phosphor-border);
+	color: var(--phosphor);
+}
+
+.form__failure {
+	background-color: var(--fury-fill);
+	border: 1px solid var(--fury-border);
+	color: var(--fury);
+}
+
+.form__retry {
+	display: inline-block;
+	margin-top: var(--sp-3);
+	padding: var(--sp-2) var(--sp-4);
+	background: none;
+	border: 1px solid var(--fury-border);
+	border-radius: var(--radius-sm);
+	color: var(--fury);
+	font-family: var(--font-mono);
+	font-size: 0.75rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color var(--transition-fast);
+}
+
+.form__retry:hover {
+	background-color: var(--fury-fill);
+}
+
+/* ── Form wrapper (hides form on success) ────────────────── */
+
+.form__fields.is-hidden {
+	display: none;
+}

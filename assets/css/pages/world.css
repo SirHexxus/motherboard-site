@@ -1,0 +1,43 @@
+/* ============================================================
+   World — Motherboard Campaign Wiki
+   ============================================================ */
+
+.world-sections {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-8);
+}
+
+.world-section {
+	background-color: var(--elevated);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-sm);
+	padding: var(--sp-6);
+}
+
+.world-section__title {
+	font-family: var(--font-display);
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: var(--phosphor);
+	text-shadow: var(--glow-text-p);
+	margin-bottom: var(--sp-4);
+}
+
+.world-section__body {
+	color: var(--text-secondary);
+	font-size: 0.95rem;
+	line-height: 1.7;
+}
+
+.world-section__body p {
+	margin-bottom: var(--sp-3);
+}
+
+.world-section__tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--sp-2);
+	margin-top: var(--sp-4);
+}

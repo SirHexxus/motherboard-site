@@ -1,0 +1,76 @@
+/* ============================================================
+   Utilities — Motherboard Campaign Wiki
+   Single-purpose helper classes.
+   ============================================================ */
+
+/* ── Text color ──────────────────────────────────────────── */
+
+.text-phosphor  { color: var(--phosphor); }
+.text-amber     { color: var(--amber); }
+.text-cherenkov { color: var(--cherenkov); }
+.text-fury      { color: var(--fury); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted     { color: var(--text-secondary); opacity: 0.6; }
+
+/* ── Text style ──────────────────────────────────────────── */
+
+.font-display { font-family: var(--font-display); }
+.font-mono    { font-family: var(--font-mono); }
+.font-vt      { font-family: var(--font-vt); }
+
+.text-sm   { font-size: 0.875rem; }
+.text-xs   { font-size: 0.75rem; }
+.text-lg   { font-size: 1.125rem; }
+.text-mono { font-family: var(--font-mono); font-size: 0.85rem; }
+
+.text-upper   { text-transform: uppercase; }
+.letter-wide  { letter-spacing: 0.08em; }
+
+/* ── Spacing ─────────────────────────────────────────────── */
+
+.mt-0  { margin-top: 0; }
+.mb-0  { margin-bottom: 0; }
+.mb-4  { margin-bottom: var(--sp-4); }
+.mb-6  { margin-bottom: var(--sp-6); }
+.mb-8  { margin-bottom: var(--sp-8); }
+
+/* ── Display ─────────────────────────────────────────────── */
+
+.hidden { display: none; }
+
+.flex         { display: flex; }
+.flex-wrap    { flex-wrap: wrap; }
+.items-center { align-items: center; }
+.gap-2        { gap: var(--sp-2); }
+.gap-3        { gap: var(--sp-3); }
+
+/* ── Loading state ───────────────────────────────────────── */
+
+.loading-placeholder {
+	padding: var(--sp-12);
+	text-align: center;
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+	letter-spacing: 0.1em;
+}
+
+/* ── Error state ─────────────────────────────────────────── */
+
+.error-message {
+	padding: var(--sp-4);
+	background-color: var(--fury-fill);
+	border: 1px solid var(--fury-border);
+	border-radius: var(--radius-sm);
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	color: var(--fury);
+}
+
+/* ── Divider ─────────────────────────────────────────────── */
+
+.divider {
+	border: none;
+	border-top: 1px solid var(--surface-border);
+	margin: var(--sp-8) 0;
+}

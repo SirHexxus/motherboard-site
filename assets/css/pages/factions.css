@@ -1,0 +1,47 @@
+/* ============================================================
+   Factions — Motherboard Campaign Wiki
+   ============================================================ */
+
+.faction-list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-5);
+}
+
+.faction-entry {
+	background-color: var(--elevated);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-sm);
+	padding: var(--sp-5);
+}
+
+.faction-entry__header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: var(--sp-3);
+	margin-bottom: var(--sp-4);
+}
+
+.faction-entry__name {
+	font-family: var(--font-display);
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--text-primary);
+}
+
+.faction-entry__meta {
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+	margin-top: var(--sp-1);
+}
+
+.faction-entry__description {
+	color: var(--text-secondary);
+	font-size: 0.9rem;
+	line-height: 1.65;
+}

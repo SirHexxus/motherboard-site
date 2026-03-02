@@ -1,0 +1,30 @@
+/* ============================================================
+   Submit — Motherboard Campaign Wiki
+   ============================================================ */
+
+.submit-intro {
+	margin-bottom: var(--sp-8);
+	max-width: 640px;
+}
+
+.submit-intro__text {
+	color: var(--text-secondary);
+	font-size: 0.95rem;
+}
+
+.submit-wrapper {
+	max-width: 640px;
+}
+
+.form-panel {
+	padding-top: var(--sp-2);
+}
+
+.form-panel__heading {
+	font-family: var(--font-display);
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	color: var(--text-primary);
+	margin-bottom: var(--sp-6);
+}

@@ -1,0 +1,98 @@
+/* ============================================================
+   Design Tokens — Motherboard Campaign Wiki
+   SirHexxus Identity + Remnant 4-Color Extension
+
+   Remnant state system:
+     Green  (#00E676) — joy / communicative
+     Amber  (#FFB827) — warning / Safety Routines active
+     Blue   (#00DFFF) — calm / standard operating
+     Red    (#E01030) — Fury / Rage-Skarring active
+   ============================================================ */
+
+:root {
+
+	/* ── Foundation ──────────────────────────── */
+	--void:           #050A12;
+	--deep:           #0A1628;
+	--elevated:       #0F1E35;
+	--text-primary:   #E8F4FF;
+	--text-secondary: #8AABCC;
+
+	/* ── Phosphor palette (Remnant: Green / joy + communicative) */
+	--phosphor:        #00E676;
+	--phosphor-dim:    #00B359;
+	--phosphor-bright: #69FFAC;
+
+	--phosphor-border: rgba(0, 230, 118, 0.30);
+	--phosphor-fill:   rgba(0, 230, 118, 0.07);
+	--glow-p-sm:       0 0 8px  rgba(0, 230, 118, 0.35);
+	--glow-p-md:       0 0 20px rgba(0, 230, 118, 0.40);
+	--glow-text-p:     0 0 10px rgba(0, 230, 118, 0.50);
+
+	/* ── Amber palette (Remnant: Amber / warning + Safety Routines) */
+	--amber:     #FFB827;
+	--amber-dim: #CC8800;
+
+	--amber-border:  rgba(255, 184, 39, 0.35);
+	--amber-fill:    rgba(255, 184, 39, 0.07);
+	--glow-a-sm:     0 0 8px  rgba(255, 184, 39, 0.40);
+	--glow-text-a:   0 0 10px rgba(255, 184, 39, 0.50);
+
+	/* ── Cherenkov palette (Remnant: Blue / calm + standard operating) */
+	--cherenkov:        #00DFFF;
+	--cherenkov-dim:    #009CC0;
+	--cherenkov-bright: #40F0FF;
+
+	--cherenkov-border: rgba(0, 223, 255, 0.30);
+	--cherenkov-fill:   rgba(0, 223, 255, 0.07);
+	--glow-c-sm:        0 0 8px  rgba(0, 223, 255, 0.35);
+	--glow-text-c:      0 0 10px rgba(0, 223, 255, 0.50);
+
+	/* ── Fury palette (Remnant: Red / Fury + Rage-Skarring active) */
+	--fury:        #E01030;
+	--fury-dim:    #B00020;
+	--fury-bright: #FF3050;
+
+	--fury-border: rgba(224, 16, 48, 0.35);
+	--fury-fill:   rgba(224, 16, 48, 0.07);
+	--glow-f-sm:   0 0 8px  rgba(224, 16, 48, 0.40);
+	--glow-text-f: 0 0 10px rgba(224, 16, 48, 0.50);
+
+	/* ── Surface borders ─────────────────────── */
+	--surface-border: rgba(138, 171, 204, 0.15);
+
+	/* ── Typography ──────────────────────────── */
+	--font-display: 'Rajdhani', 'Impact', sans-serif;
+	--font-body:    'Space Grotesk', system-ui, sans-serif;
+	--font-mono:    'JetBrains Mono', 'Courier New', monospace;
+	--font-vt:      'VT323', 'Courier New', monospace;
+
+	/* ── Spacing (4px base) ──────────────────── */
+	--sp-1:  4px;
+	--sp-2:  8px;
+	--sp-3:  12px;
+	--sp-4:  16px;
+	--sp-5:  20px;
+	--sp-6:  24px;
+	--sp-8:  32px;
+	--sp-10: 40px;
+	--sp-12: 48px;
+	--sp-16: 64px;
+
+	/* ── Border radius ───────────────────────── */
+	--radius-sm: 2px;
+	--radius-md: 4px;
+	--radius-lg: 8px;
+
+	/* ── Layout ──────────────────────────────── */
+	--content-max:  1400px;
+	--nav-height:   56px;
+
+	/* ── Z-index ─────────────────────────────── */
+	--z-nav:     50;
+	--z-overlay: 200;
+
+	/* ── Transitions ─────────────────────────── */
+	--transition-fast: 150ms ease;
+	--transition-base: 250ms ease;
+}

@@ -1,0 +1,46 @@
+/* ============================================================
+   Tables — Motherboard Campaign Wiki
+   .data-table — from encounter-table pattern in Ref HTML.
+   ============================================================ */
+
+.data-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.9rem;
+	margin-bottom: var(--sp-4);
+}
+
+.data-table th {
+	padding: var(--sp-2) var(--sp-3);
+	background-color: var(--elevated);
+	border-bottom: 1px solid var(--surface-border);
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--text-secondary);
+	text-align: left;
+	white-space: nowrap;
+}
+
+.data-table td {
+	padding: var(--sp-2) var(--sp-3);
+	border-bottom: 1px solid rgba(138, 171, 204, 0.08);
+	color: var(--text-primary);
+	vertical-align: top;
+}
+
+.data-table tr:last-child td {
+	border-bottom: none;
+}
+
+.data-table tr:hover td {
+	background-color: rgba(138, 171, 204, 0.04);
+}
+
+/* Scrollable on small viewports */
+.data-table-wrap {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}

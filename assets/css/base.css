@@ -1,0 +1,152 @@
+/* ============================================================
+   Base — Motherboard Campaign Wiki
+   Body, headings, links, hr, skip-link.
+   ============================================================ */
+
+body {
+	background-color: var(--void);
+	color: var(--text-primary);
+	font-family: var(--font-body);
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+/* ── Headings ────────────────────────────────────────────── */
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-display);
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: 0.03em;
+}
+
+h1 {
+	font-size: 2.5rem;
+	color: var(--text-primary);
+}
+
+h2 {
+	font-size: 1.75rem;
+	color: var(--phosphor);
+	text-shadow: var(--glow-text-p);
+	margin-bottom: var(--sp-5);
+}
+
+h3 {
+	font-size: 1.25rem;
+	color: var(--text-primary);
+	margin-bottom: var(--sp-2);
+}
+
+h4 {
+	font-size: 1rem;
+	color: var(--text-secondary);
+	margin-bottom: var(--sp-1);
+}
+
+/* ── Body text ───────────────────────────────────────────── */
+
+p {
+	margin-bottom: var(--sp-3);
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+ul,
+ol {
+	padding-left: var(--sp-5);
+	margin-bottom: var(--sp-3);
+}
+
+li {
+	margin-bottom: var(--sp-1);
+}
+
+strong {
+	color: var(--text-primary);
+	font-weight: 500;
+}
+
+em {
+	color: var(--text-secondary);
+	font-style: italic;
+}
+
+/* ── Links ───────────────────────────────────────────────── */
+
+a {
+	color: var(--phosphor);
+	text-decoration: none;
+	transition: color var(--transition-fast), text-shadow var(--transition-fast);
+}
+
+a:hover {
+	color: var(--phosphor-bright);
+	text-shadow: var(--glow-text-p);
+}
+
+a:focus-visible {
+	outline: 2px solid var(--phosphor);
+	outline-offset: 2px;
+	border-radius: var(--radius-sm);
+}
+
+/* ── Horizontal rule ─────────────────────────────────────── */
+
+hr {
+	border: none;
+	border-top: 1px solid var(--surface-border);
+	margin: var(--sp-6) 0;
+}
+
+/* ── Code ────────────────────────────────────────────────── */
+
+code {
+	font-family: var(--font-mono);
+	font-size: 0.85em;
+	color: var(--phosphor);
+	background-color: var(--phosphor-fill);
+	padding: 1px var(--sp-2);
+	border-radius: var(--radius-sm);
+}
+
+/* ── Skip link (accessibility) ───────────────────────────── */
+
+.skip-link {
+	position: absolute;
+	top: -60px;
+	left: 0;
+	z-index: var(--z-overlay);
+	padding: var(--sp-2) var(--sp-4);
+	background-color: var(--phosphor);
+	color: var(--void);
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+/* ── Screen-reader only ──────────────────────────────────── */
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
