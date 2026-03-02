@@ -20,6 +20,9 @@ export const render_session_list = (container, sessions) => {
   const sorted = [...sessions].sort((a, b) => b.number - a.number);
 
   const html = sorted.map((s) => {
+    const is_complete = s.status === 'complete';
+    const modifier = is_complete ? 'session-entry--complete' : 'session-entry--upcoming';
+
     const highlights_html = s.highlights && s.highlights.length
       ? `<div class="session-entry__highlights">
           <p class="session-entry__highlights-heading">Session highlights</p>
@@ -40,12 +43,13 @@ export const render_session_list = (container, sessions) => {
       ? s.tags.map((t) => `<span class="badge badge--muted">${escape_html(t)}</span>`).join('')
       : '';
 
-    const status_badge = s.status === 'complete'
-      ? '<span class="badge badge--phosphor">Complete</span>'
+    // Complete = cherenkov badge (calm, it's history); upcoming = amber (warning)
+    const status_badge = is_complete
+      ? '<span class="badge badge--cherenkov">Complete</span>'
       : '<span class="badge badge--amber">Upcoming</span>';
 
     return `
-      <article class="session-entry">
+      <article class="session-entry ${modifier}">
         <div class="session-entry__header">
           <div>
             <p class="session-entry__number">Session ${escape_html(String(s.number))}</p>
@@ -68,6 +72,35 @@ export const render_session_list = (container, sessions) => {
 
 // ── Characters ────────────────────────────────────────────────────────────────
 
+// Maps faction string → CSS modifier class
+const faction_to_class = (faction, tags) => {
+  if (tags && tags.includes('party-asset')) return 'char-card--asset';
+  if (!faction) return '';
+  const f = faction.toLowerCase();
+  if (f.includes('loyalist')) return 'char-card--loyalist';
+  if (f.includes('unionist')) return 'char-card--unionist';
+  if (f.includes('masses') || f.includes('agitator')) return 'char-card--masses';
+  if (f.includes('wildcard')) return 'char-card--wildcard';
+  return '';
+};
+
+// The remnant state cycle indicator, used on BR's card
+const REMNANT_CYCLE_HTML = `
+  <div class="remnant-cycle remnant-cycle--suppressed" aria-label="Remnant state cycle">
+    <span class="remnant-cycle__label remnant-cycle__label--red">Red</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--amber">Amber</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--blue">Blue</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--green">Green</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--red">Red&hellip;</span>
+    <span class="remnant-cycle__note">
+      Rage-Skarring suppressed &mdash; currently cycling Blue &rarr; Green
+    </span>
+  </div>`;
+
 const render_char_card = (c, is_pc) => {
   const tags_html = c.tags && c.tags.length
     ? `<div class="char-card__tags">
@@ -79,11 +112,15 @@ const render_char_card = (c, is_pc) => {
     ? `${escape_html(c.class)} / ${escape_html(c.subclass)}`
     : escape_html(c.role || c.faction || '');
 
+  const faction_class = is_pc ? '' : faction_to_class(c.faction, c.tags);
+  const show_cycle = c.tags && c.tags.includes('party-asset') && c.tags.includes('remnant');
+
   return `
-    <article class="char-card${is_pc ? ' char-card--pc' : ''}">
+    <article class="char-card${is_pc ? ' char-card--pc' : ''}${faction_class ? ' ' + faction_class : ''}">
       <h3 class="char-card__name">${escape_html(c.name)}</h3>
       <p class="char-card__role">${role_line}</p>
       <p class="char-card__description">${escape_html(c.description)}</p>
+      ${show_cycle ? REMNANT_CYCLE_HTML : ''}
       ${tags_html}
     </article>`;
 };
@@ -112,6 +149,8 @@ export const render_character_grid = (container, pcs, npcs) => {
 
 // ── Factions ──────────────────────────────────────────────────────────────────
 
+// Faction size badge — cherenkov (standard operating, informational)
+// Stance badge — amber (warning, authority)
 export const render_faction_list = (container, factions) => {
   if (!factions || !factions.length) {
     container.innerHTML = '<p class="text-secondary">No factions on record.</p>';
@@ -150,6 +189,21 @@ export const render_faction_list = (container, factions) => {
 
 // ── World ─────────────────────────────────────────────────────────────────────
 
+// Inline remnant cycle for the Remnants world section body
+const WORLD_REMNANT_CYCLE_HTML = `
+  <div class="remnant-cycle" aria-label="Remnant state cycle" style="margin-top: 1rem;">
+    <span class="remnant-cycle__label remnant-cycle__label--blue">Blue</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--green">Green</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--amber">Amber</span>
+    <span class="remnant-cycle__arrow">&#8594;</span>
+    <span class="remnant-cycle__label remnant-cycle__label--red">Red</span>
+    <span class="remnant-cycle__note">
+      Calm &rarr; Communicative &rarr; Warning &rarr; Fury
+    </span>
+  </div>`;
+
 export const render_world_sections = (container, sections) => {
   if (!sections || !sections.length) {
     container.innerHTML = '<p class="text-secondary">No world content yet.</p>';
@@ -157,6 +211,8 @@ export const render_world_sections = (container, sections) => {
   }
 
   const html = sections.map((s) => {
+    const accent_class = s.accent ? ` world-section--${escape_html(s.accent)}` : '';
+
     const tags_html = s.tags && s.tags.length
       ? `<div class="world-section__tags">
           ${s.tags.map((t) => `<span class="badge badge--muted">${escape_html(t)}</span>`).join('')}
@@ -168,12 +224,15 @@ export const render_world_sections = (container, sections) => {
       (para) => `<p>${escape_html(para.trim())}</p>`
     ).join('');
 
+    const cycle_html = s.show_remnant_cycle ? WORLD_REMNANT_CYCLE_HTML : '';
+
     return `
-      <section class="world-section" id="${escape_html(s.id)}">
+      <section class="world-section${accent_class}" id="${escape_html(s.id)}">
         <h2 class="world-section__title">${escape_html(s.title)}</h2>
         <div class="world-section__body">
           ${paragraphs}
         </div>
+        ${cycle_html}
         ${tags_html}
       </section>`;
   }).join('');
