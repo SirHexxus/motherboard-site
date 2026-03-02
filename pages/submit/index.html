@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Submit session recaps, character journal entries, loose notes, and lore questions for the Motherboard campaign.">
+	<title>Submit Notes — M0THERB0ARD Wiki</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=VT323&display=swap"
+		rel="stylesheet"
+	>
+
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/variables.css">
+	<link rel="stylesheet" href="/assets/css/base.css">
+	<link rel="stylesheet" href="/assets/css/layout.css">
+	<link rel="stylesheet" href="/assets/css/components/cards.css">
+	<link rel="stylesheet" href="/assets/css/components/navigation.css">
+	<link rel="stylesheet" href="/assets/css/components/forms.css">
+	<link rel="stylesheet" href="/assets/css/utilities.css">
+	<link rel="stylesheet" href="/assets/css/pages/submit.css">
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<div class="site-wrapper">
+
+		<!-- ============================================================
+		     SITE HEADER + NAV — duplicated across all pages.
+		     SYNC: If you update this block, update it in ALL html files.
+		     ============================================================ -->
+		<header class="site-header">
+			<div class="site-header__inner">
+				<a class="site-header__wordmark" href="/">
+					M0THERB0ARD
+					<span class="site-header__subtitle">Campaign Wiki</span>
+				</a>
+				<button
+					class="site-header__hamburger"
+					data-nav-toggle
+					aria-label="Toggle navigation"
+					aria-expanded="false"
+					aria-controls="site-nav"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<nav class="site-nav" id="site-nav" data-site-nav aria-label="Main navigation">
+			<ul class="site-nav__list">
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/" data-nav-link>Home</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/sessions/" data-nav-link>Sessions</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/characters/" data-nav-link>Characters</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/factions/" data-nav-link>Factions</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/world/" data-nav-link>World</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/submit/" data-nav-link>Submit Notes</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- END SYNC BLOCK -->
+
+		<main class="page-main" id="main-content">
+
+			<header class="page-section">
+				<h1>Submit Notes</h1>
+			</header>
+
+			<div class="submit-intro">
+				<p class="submit-intro__text">
+					Send the GM your session recaps, character journal entries, loose notes,
+					or lore questions. Everything goes into a private sheet for review.
+					No spoilers in the responses — but your notes shape the campaign.
+				</p>
+			</div>
+
+			<!-- ── Tab nav ────────────────────────────────────────── -->
+			<div class="submit-wrapper">
+
+				<nav class="tab-nav" data-tab-nav aria-label="Submission type">
+					<ul class="tab-nav__list">
+						<li>
+							<button
+								class="tab-nav__btn"
+								data-tab-btn="session-recap"
+								aria-selected="false"
+							>Session Recap</button>
+						</li>
+						<li>
+							<button
+								class="tab-nav__btn"
+								data-tab-btn="character-journal"
+								aria-selected="false"
+							>Character Journal</button>
+						</li>
+						<li>
+							<button
+								class="tab-nav__btn"
+								data-tab-btn="misc-notes"
+								aria-selected="false"
+							>Loose Notes</button>
+						</li>
+						<li>
+							<button
+								class="tab-nav__btn"
+								data-tab-btn="lore-question"
+								aria-selected="false"
+							>Lore Question</button>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- ── Session Recap ──────────────────────────────── -->
+				<div class="tab-panel" data-tab-panel="session-recap">
+					<form
+						class="form-panel"
+						data-form-type="session-recap"
+						novalidate
+					>
+						<h2 class="form-panel__heading">Session Recap</h2>
+
+						<div class="form__fields" data-form-fields>
+							<div class="form__group">
+								<label class="form__label" for="sr-player-name">
+									Your name <span class="form__required" aria-label="required">*</span>
+								</label>
+								<input
+									class="form__input"
+									id="sr-player-name"
+									name="player_name"
+									type="text"
+									autocomplete="name"
+									required
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="sr-session">
+									Session
+								</label>
+								<select
+									class="form__select"
+									id="sr-session"
+									name="session_number"
+									data-session-select
+								>
+								</select>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="sr-pov">
+									POV character (optional)
+								</label>
+								<input
+									class="form__input"
+									id="sr-pov"
+									name="pov_character"
+									type="text"
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="sr-summary">
+									Your recap <span class="form__required" aria-label="required">*</span>
+								</label>
+								<textarea
+									class="form__textarea"
+									id="sr-summary"
+									name="summary"
+									required
+									placeholder="What happened? What did your character think and feel?"
+								></textarea>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="sr-moment">
+									Most memorable moment (optional)
+								</label>
+								<input
+									class="form__input"
+									id="sr-moment"
+									name="memorable_moment"
+									type="text"
+								>
+							</div>
+
+							<button
+								class="form__submit"
+								type="submit"
+								data-submit-btn
+							>
+								Transmit Recap
+							</button>
+						</div>
+
+						<div class="form__success" data-form-success>
+							<strong>Received.</strong> Your recap is in the queue.
+							The GM will read it before next session.
+						</div>
+
+						<div class="form__failure" data-form-failure>
+							<strong>Transmission failed.</strong> Something went wrong sending
+							your recap. Try again or ping the GM directly.
+							<br>
+							<button class="form__retry" type="button" data-form-retry>
+								Retry
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<!-- ── Character Journal ──────────────────────────── -->
+				<div class="tab-panel" data-tab-panel="character-journal">
+					<form
+						class="form-panel"
+						data-form-type="character-journal"
+						novalidate
+					>
+						<h2 class="form-panel__heading">Character Journal</h2>
+
+						<div class="form__fields" data-form-fields>
+							<div class="form__group">
+								<label class="form__label" for="cj-player-name">
+									Your name <span class="form__required" aria-label="required">*</span>
+								</label>
+								<input
+									class="form__input"
+									id="cj-player-name"
+									name="player_name"
+									type="text"
+									autocomplete="name"
+									required
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="cj-character">
+									Character name <span class="form__required" aria-label="required">*</span>
+								</label>
+								<input
+									class="form__input"
+									id="cj-character"
+									name="character_name"
+									type="text"
+									required
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="cj-title">
+									Entry title (optional)
+								</label>
+								<input
+									class="form__input"
+									id="cj-title"
+									name="entry_title"
+									type="text"
+									placeholder="e.g. After the Factory"
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="cj-session">
+									Session (optional)
+								</label>
+								<select
+									class="form__select"
+									id="cj-session"
+									name="session_number"
+									data-session-select
+								>
+								</select>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="cj-entry">
+									Journal entry <span class="form__required" aria-label="required">*</span>
+								</label>
+								<textarea
+									class="form__textarea"
+									id="cj-entry"
+									name="entry_text"
+									required
+									placeholder="Write in-character or out-of-character — your choice."
+								></textarea>
+							</div>
+
+							<button
+								class="form__submit"
+								type="submit"
+								data-submit-btn
+							>
+								Transmit Entry
+							</button>
+						</div>
+
+						<div class="form__success" data-form-success>
+							<strong>Received.</strong> Journal entry logged.
+						</div>
+
+						<div class="form__failure" data-form-failure>
+							<strong>Transmission failed.</strong> Try again or contact the GM.
+							<br>
+							<button class="form__retry" type="button" data-form-retry>
+								Retry
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<!-- ── Loose Notes ────────────────────────────────── -->
+				<div class="tab-panel" data-tab-panel="misc-notes">
+					<form
+						class="form-panel"
+						data-form-type="misc-notes"
+						novalidate
+					>
+						<h2 class="form-panel__heading">Loose Notes</h2>
+
+						<div class="form__fields" data-form-fields>
+							<div class="form__group">
+								<label class="form__label" for="mn-player-name">
+									Your name <span class="form__required" aria-label="required">*</span>
+								</label>
+								<input
+									class="form__input"
+									id="mn-player-name"
+									name="player_name"
+									type="text"
+									autocomplete="name"
+									required
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="mn-subject">
+									Subject (optional)
+								</label>
+								<input
+									class="form__input"
+									id="mn-subject"
+									name="subject"
+									type="text"
+									placeholder="e.g. Theory about BR, Feedback on Session 2..."
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="mn-notes">
+									Notes <span class="form__required" aria-label="required">*</span>
+								</label>
+								<textarea
+									class="form__textarea"
+									id="mn-notes"
+									name="notes"
+									required
+									placeholder="Anything on your mind. Theories, feedback, questions, thoughts."
+								></textarea>
+							</div>
+
+							<button
+								class="form__submit"
+								type="submit"
+								data-submit-btn
+							>
+								Transmit Notes
+							</button>
+						</div>
+
+						<div class="form__success" data-form-success>
+							<strong>Received.</strong> Notes logged. The GM will review before next session.
+						</div>
+
+						<div class="form__failure" data-form-failure>
+							<strong>Transmission failed.</strong> Try again or contact the GM.
+							<br>
+							<button class="form__retry" type="button" data-form-retry>
+								Retry
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<!-- ── Lore Question ──────────────────────────────── -->
+				<div class="tab-panel" data-tab-panel="lore-question">
+					<form
+						class="form-panel"
+						data-form-type="lore-question"
+						novalidate
+					>
+						<h2 class="form-panel__heading">Lore Question</h2>
+
+						<div class="form__fields" data-form-fields>
+							<div class="form__group">
+								<label class="form__label" for="lq-player-name">
+									Your name <span class="form__required" aria-label="required">*</span>
+								</label>
+								<input
+									class="form__input"
+									id="lq-player-name"
+									name="player_name"
+									type="text"
+									autocomplete="name"
+									required
+								>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="lq-question">
+									Your question <span class="form__required" aria-label="required">*</span>
+								</label>
+								<textarea
+									class="form__textarea"
+									id="lq-question"
+									name="question"
+									required
+									placeholder="What do you want to know? The GM will answer what your character could plausibly know."
+								></textarea>
+							</div>
+
+							<div class="form__group">
+								<label class="form__label" for="lq-related">
+									Related to
+								</label>
+								<select
+									class="form__select"
+									id="lq-related"
+									name="related_to"
+								>
+									<option value="">Select a category…</option>
+									<option value="character">A character</option>
+									<option value="faction">A faction</option>
+									<option value="place">A place</option>
+									<option value="world">World / lore</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+
+							<button
+								class="form__submit"
+								type="submit"
+								data-submit-btn
+							>
+								Transmit Question
+							</button>
+						</div>
+
+						<div class="form__success" data-form-success>
+							<strong>Received.</strong> Question logged. The GM will get back to you
+							before or at the next session.
+						</div>
+
+						<div class="form__failure" data-form-failure>
+							<strong>Transmission failed.</strong> Try again or contact the GM.
+							<br>
+							<button class="form__retry" type="button" data-form-retry>
+								Retry
+							</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer class="site-footer">
+			<p class="site-footer__text">
+				M0THERB0ARD Campaign Wiki &mdash; Daggerheart
+			</p>
+		</footer>
+
+	</div>
+
+	<script type="module" src="/assets/js/main.js"></script>
+	<script type="module" src="/assets/js/pages/submit.js"></script>
+</body>
+</html>

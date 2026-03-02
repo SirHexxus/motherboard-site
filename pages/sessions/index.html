@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Session logs for the Motherboard Daggerheart campaign — what happened, highlights, and notable NPCs.">
+	<title>Sessions — M0THERB0ARD Wiki</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=VT323&display=swap"
+		rel="stylesheet"
+	>
+
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/variables.css">
+	<link rel="stylesheet" href="/assets/css/base.css">
+	<link rel="stylesheet" href="/assets/css/layout.css">
+	<link rel="stylesheet" href="/assets/css/components/cards.css">
+	<link rel="stylesheet" href="/assets/css/components/navigation.css">
+	<link rel="stylesheet" href="/assets/css/utilities.css">
+	<link rel="stylesheet" href="/assets/css/pages/sessions.css">
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<div class="site-wrapper">
+
+		<!-- ============================================================
+		     SITE HEADER + NAV — duplicated across all pages.
+		     SYNC: If you update this block, update it in ALL html files.
+		     ============================================================ -->
+		<header class="site-header">
+			<div class="site-header__inner">
+				<a class="site-header__wordmark" href="/">
+					M0THERB0ARD
+					<span class="site-header__subtitle">Campaign Wiki</span>
+				</a>
+				<button
+					class="site-header__hamburger"
+					data-nav-toggle
+					aria-label="Toggle navigation"
+					aria-expanded="false"
+					aria-controls="site-nav"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<nav class="site-nav" id="site-nav" data-site-nav aria-label="Main navigation">
+			<ul class="site-nav__list">
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/" data-nav-link>Home</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/sessions/" data-nav-link>Sessions</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/characters/" data-nav-link>Characters</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/factions/" data-nav-link>Factions</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/world/" data-nav-link>World</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/submit/" data-nav-link>Submit Notes</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- END SYNC BLOCK -->
+
+		<main class="page-main" id="main-content">
+
+			<header class="page-section">
+				<h1>Sessions</h1>
+				<p class="text-secondary">
+					A log of every session — what happened, who showed up, and what mattered.
+					Most recent sessions appear first.
+				</p>
+			</header>
+
+			<div data-content-region="sessions">
+				<p class="loading-placeholder">Loading sessions&hellip;</p>
+			</div>
+
+		</main>
+
+		<footer class="site-footer">
+			<p class="site-footer__text">
+				M0THERB0ARD Campaign Wiki &mdash; Daggerheart
+			</p>
+		</footer>
+
+	</div>
+
+	<script type="module" src="/assets/js/main.js"></script>
+	<script type="module" src="/assets/js/pages/sessions.js"></script>
+</body>
+</html>

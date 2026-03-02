@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Player-facing campaign wiki for the Motherboard Daggerheart campaign — sessions, characters, factions, world lore, and more.">
+	<title>M0THERB0ARD — Campaign Wiki</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400;500&family=VT323&display=swap"
+		rel="stylesheet"
+	>
+
+	<link rel="stylesheet" href="/assets/css/reset.css">
+	<link rel="stylesheet" href="/assets/css/variables.css">
+	<link rel="stylesheet" href="/assets/css/base.css">
+	<link rel="stylesheet" href="/assets/css/layout.css">
+	<link rel="stylesheet" href="/assets/css/components/cards.css">
+	<link rel="stylesheet" href="/assets/css/components/navigation.css">
+	<link rel="stylesheet" href="/assets/css/utilities.css">
+	<link rel="stylesheet" href="/assets/css/pages/home.css">
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+
+	<div class="site-wrapper">
+
+		<!-- ============================================================
+		     SITE HEADER + NAV — duplicated across all pages.
+		     SYNC: If you update this block, update it in ALL html files.
+		     ============================================================ -->
+		<header class="site-header">
+			<div class="site-header__inner">
+				<a class="site-header__wordmark" href="/">
+					M0THERB0ARD
+					<span class="site-header__subtitle">Campaign Wiki</span>
+				</a>
+				<button
+					class="site-header__hamburger"
+					data-nav-toggle
+					aria-label="Toggle navigation"
+					aria-expanded="false"
+					aria-controls="site-nav"
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+		</header>
+
+		<nav class="site-nav" id="site-nav" data-site-nav aria-label="Main navigation">
+			<ul class="site-nav__list">
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/" data-nav-link>Home</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/sessions/" data-nav-link>Sessions</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/characters/" data-nav-link>Characters</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/factions/" data-nav-link>Factions</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/world/" data-nav-link>World</a>
+				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/submit/" data-nav-link>Submit Notes</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- END SYNC BLOCK -->
+
+		<main class="page-main" id="main-content">
+
+			<!-- ── Hero ──────────────────────────────────────────── -->
+			<section class="hero">
+				<p class="hero__eyebrow">DAGGERHEART CAMPAIGN</p>
+				<h1 class="hero__title">M0THERB0ARD</h1>
+				<p class="hero__subtitle">
+					Echo Vale, post-post-apocalyptic. Ancient tech as magic. Machines that
+					dream. A city on the edge.
+				</p>
+				<div class="hero__badges">
+					<span class="badge badge--amber">Session 2 Complete</span>
+					<span class="badge badge--phosphor">Active Campaign</span>
+					<span class="badge badge--cherenkov">BR in Custody</span>
+				</div>
+			</section>
+
+			<!-- ── Status cards ───────────────────────────────────── -->
+			<section class="status-section page-section">
+				<h2 class="status-section__heading">Current Status</h2>
+				<div class="grid grid--3">
+					<div class="card card--elevated">
+						<span class="card__eyebrow">The Setting</span>
+						<p class="card__title">Argent, Echo Vale</p>
+						<p class="card__body">
+							A city under siege by Fury-infected Remnants. Loyalists, Unionists,
+							and The Masses are at a breaking point. Something is moving fast.
+						</p>
+					</div>
+					<div class="card card--amber">
+						<span class="card__eyebrow">Active Threads</span>
+						<p class="card__title">8 Fear Carried Forward</p>
+						<p class="card__body">
+							BR's Rage-Skarring suppression lasts ~12 hours. Jerome's Home Terminal
+							is the destination. Mac the Scrap Jack was stiffed and will move.
+						</p>
+					</div>
+					<div class="card card--phosphor">
+						<span class="card__eyebrow">Next Session</span>
+						<p class="card__title">Session 3 — TBD</p>
+						<p class="card__body">
+							BR transport through the maintenance tunnel. Clock ticking.
+							What's on the Info Node? Who put it there?
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- ── Party strip ────────────────────────────────────── -->
+			<section class="party-section page-section">
+				<h2 class="party-section__heading">The Party</h2>
+				<div class="grid grid--3">
+					<article class="pc-card">
+						<p class="pc-card__name">Spyke Ateles</p>
+						<p class="pc-card__class">Rogue / Syndicate · Simiah</p>
+						<p class="pc-card__description">
+							Wrench jockey and new-wave Unionist. Crossing a picket line
+							costs him something real. Ikonis: The BF9K.
+						</p>
+					</article>
+					<article class="pc-card">
+						<p class="pc-card__name">Jerome</p>
+						<p class="pc-card__class">Wizard / Knowledge · Half-Giant</p>
+						<p class="pc-card__description">
+							Ivory tower academic and true believer in the Motherboard faith.
+							His staff is a light source in the dark. Ikonis: Kohd Krash.
+						</p>
+					</article>
+					<article class="pc-card">
+						<p class="pc-card__name">Niff Nimble-Ray</p>
+						<p class="pc-card__class">Druid / Renewal · Fairy</p>
+						<p class="pc-card__description">
+							Techno-naturalist with a Nanite Control Module that lets her
+							shapeshift into Remnant forms. Brem's eye saw through her.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<!-- ── Section nav grid ──────────────────────────────── -->
+			<section class="section-nav page-section">
+				<h2 class="section-nav__heading">Explore the Wiki</h2>
+				<div class="section-nav__grid">
+					<a class="nav-card" href="/pages/sessions/">
+						<span class="nav-card__icon">▶▶</span>
+						<span class="nav-card__title">Sessions</span>
+						<span class="nav-card__desc">Session logs, highlights, and what happened</span>
+					</a>
+					<a class="nav-card" href="/pages/characters/">
+						<span class="nav-card__icon">◈</span>
+						<span class="nav-card__title">Characters</span>
+						<span class="nav-card__desc">The party and notable NPCs</span>
+					</a>
+					<a class="nav-card" href="/pages/factions/">
+						<span class="nav-card__icon">⬡</span>
+						<span class="nav-card__title">Factions</span>
+						<span class="nav-card__desc">Loyalists, Unionists, The Masses</span>
+					</a>
+					<a class="nav-card" href="/pages/world/">
+						<span class="nav-card__icon">◉</span>
+						<span class="nav-card__title">World</span>
+						<span class="nav-card__desc">Echo Vale, the Remnants, and the Network</span>
+					</a>
+					<a class="nav-card" href="/pages/submit/">
+						<span class="nav-card__icon">✦</span>
+						<span class="nav-card__title">Submit Notes</span>
+						<span class="nav-card__desc">Session recaps, journal entries, lore questions</span>
+					</a>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="site-footer">
+			<p class="site-footer__text">
+				M0THERB0ARD Campaign Wiki &mdash; Daggerheart &mdash; GM eyes only in
+				<a href="https://github.com">the source repo</a>
+			</p>
+		</footer>
+
+	</div>
+
+	<script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
