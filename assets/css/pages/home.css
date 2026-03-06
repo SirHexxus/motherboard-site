@@ -20,6 +20,16 @@
 	margin-bottom: var(--sp-3);
 }
 
+.hero__arc {
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	margin-bottom: var(--sp-3);
+}
+
 .hero__title {
 	font-family: var(--font-display);
 	font-size: clamp(2.5rem, 8vw, 5rem);
@@ -83,6 +93,12 @@
 
 @media (min-width: 768px) {
 	.section-nav__grid {
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.section-nav__grid {
+		grid-template-columns: repeat(6, 1fr);
 	}
 }

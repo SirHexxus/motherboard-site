@@ -37,6 +37,23 @@
 					M0THERB0ARD
 					<span class="site-header__subtitle">Campaign Wiki</span>
 				</a>
+				<div class="site-header__search">
+					<button
+						class="site-header__search-btn"
+						data-search-toggle
+						aria-label="Search wiki"
+						aria-expanded="false"
+					>&#9906;</button>
+					<input
+						class="site-header__search-input"
+						type="search"
+						placeholder="Search wiki&hellip;"
+						aria-label="Search the wiki"
+						data-search-input
+						autocomplete="off"
+					>
+					<div class="search-results" data-search-results hidden aria-live="polite"></div>
+				</div>
 				<button
 					class="site-header__hamburger"
 					data-nav-toggle
@@ -71,11 +88,25 @@
 				<li class="site-nav__item">
 					<a class="site-nav__link" href="/pages/submit/" data-nav-link>Submit Notes</a>
 				</li>
+				<li class="site-nav__item">
+					<a class="site-nav__link" href="/pages/references/" data-nav-link>References</a>
+				</li>
 			</ul>
 		</nav>
 		<!-- END SYNC BLOCK -->
 
 		<main class="page-main" id="main-content">
+
+			<nav class="breadcrumb" aria-label="Breadcrumb">
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__item">
+						<a class="breadcrumb__link" href="/">Home</a>
+					</li>
+					<li class="breadcrumb__item breadcrumb__item--current" aria-current="page">
+						Factions
+					</li>
+				</ol>
+			</nav>
 
 			<header class="page-section">
 				<h1>Factions</h1>
@@ -99,6 +130,7 @@
 
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
 	<script type="module" src="/assets/js/main.js"></script>
 	<script type="module" src="/assets/js/pages/factions.js"></script>
 </body>

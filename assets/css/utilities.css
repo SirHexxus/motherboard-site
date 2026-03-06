@@ -67,6 +67,50 @@
 	color: var(--fury);
 }
 
+/* ── World glossary ──────────────────────────────────────── */
+
+.world-glossary {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0;
+}
+
+@media (min-width: 640px) {
+	.world-glossary {
+		grid-template-columns: max-content 1fr;
+	}
+}
+
+.world-glossary dt {
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--phosphor);
+	padding: var(--sp-3) var(--sp-4) var(--sp-3) 0;
+	border-bottom: 1px solid var(--surface-border);
+	white-space: nowrap;
+}
+
+.world-glossary dd {
+	font-size: 0.9rem;
+	color: var(--text-secondary);
+	padding: var(--sp-3) 0;
+	border-bottom: 1px solid var(--surface-border);
+}
+
+@media (min-width: 640px) {
+	.world-glossary dd {
+		padding-left: var(--sp-5);
+	}
+}
+
+.world-glossary dt:last-of-type,
+.world-glossary dd:last-of-type {
+	border-bottom: none;
+}
+
 /* ── Divider ─────────────────────────────────────────────── */
 
 .divider {
