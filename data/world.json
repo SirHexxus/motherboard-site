@@ -49,6 +49,13 @@
       "accent": null,
       "body": "The currency of survival in Echo Vale runs through the Scrap Economy — the salvage, trade, and black market built around old-world technology. Materials exist on a rough hierarchy: Shards are the most common (d6 tier), Metals above them (d8), Components rarer still (d10), and Relics at the top.\n\nActual currency in Argent is Quantum — a standardized exchange medium. The Scrap Economy intersects with Quantum at every level, legal and otherwise. A black market runs through the illegal end: Components and Relics that didn't go through official channels.",
       "tags": ["economy", "scrap", "world"]
+    },
+    {
+      "id": "glossary",
+      "title": "Glossary",
+      "accent": null,
+      "body_html": "<dl class=\"world-glossary\"><dt>Remnant</dt><dd>The machines of the old world, still running. They vary from roughly humanoid worker-class units to more specialized designs. They run on Kohd, cycle through color states, and connect to the Network.</dd><dt>Fury</dt><dd>A condition affecting Remnants across Echo Vale. Overrides Safety Routines and causes aggression, progressing through visible physical stages. An unnaturally fixed red state and bio-tech growth are the signs. Its origin is unknown to the party.</dd><dt>Kohd</dt><dd>The visual glyph language of the old world — what Remnants speak to each other and to the Network. Most people in Echo Vale can't read it. Jerome studies it academically. BR has been spelling words in Kohd during its communicative phases.</dd><dt>Skarring</dt><dd>A technique for rewriting a Remnant's Kohd. Ablative — the original Kohd is destroyed in replacement. Cannot make something strictly better; only create tradeoffs. Ranges from minor repairs to deep behavioral rewrites.</dd><dt>Ikonis</dt><dd>A character's signature weapon or tool — a named item that matters to them. Each PC carries one. Spyke: The BF5K. Jerome: Kohd Krash. Niff: Shocking Touch.</dd><dt>Quantum</dt><dd>The standardized currency of Argent. Used alongside the Scrap Economy for legal and illegal trade alike.</dd><dt>Scrap Tiers</dt><dd>Materials in the Scrap Economy run from common to rare: Shards (d6) → Metals (d8) → Components (d10) → Relics (top tier). The black market in Argent deals primarily in Components and Relics.</dd><dt>Argent Factions</dt><dd>The city is split three ways: Loyalists (~20%, most resources, increasingly violent), Unionists (~25%, organized but indecisive), and The Masses (~55%, leaderless and exploitable). Loyalists and Unionists cooperate only on city defense and quelling riots.</dd></dl>",
+      "tags": ["reference", "glossary"]
     }
   ]
 }

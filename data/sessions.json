@@ -13,7 +13,7 @@
         "The city of Argent introduced: Loyalists vs. Unionists, Fury on the streets"
       ],
       "pcs_present": ["spyke", "jerome", "niff"],
-      "notable_npcs": ["Mac the Scrap Jack", "Priv Maelor Rodek"],
+      "notable_npcs": ["Mac the Scrap Jack", "Priv Maelor Rhodek"],
       "tags": ["session-0", "argent", "mac", "contract"]
     },
     {
@@ -34,6 +34,18 @@
       "pcs_present": ["spyke", "jerome", "niff"],
       "notable_npcs": ["Brem Daltock", "Cooper Finn", "Lysander", "Kael Morst", "Mac the Scrap Jack", "BR-31489KJ8945"],
       "tags": ["factory", "br", "combat", "kohd", "brem", "mac", "mystery"]
+    },
+    {
+      "id": "session-3",
+      "number": 3,
+      "title": "TBD",
+      "date": "TBD",
+      "status": "in-prep",
+      "summary": "BR is in party custody, condition suppressed and clock ticking. The destination: Jerome's Home Terminal, somewhere through the maintenance tunnels beneath Argent. Mac the Scrap Jack doesn't know he was stiffed yet — but the Closed Gate order makes his smuggling routes the party's only way out. He will move.",
+      "highlights": [],
+      "pcs_present": ["spyke", "jerome", "niff"],
+      "notable_npcs": [],
+      "tags": ["br", "maintenance-tunnel", "mac", "argent", "clock"]
     }
   ]
 }
