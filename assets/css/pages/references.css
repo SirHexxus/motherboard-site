@@ -1,0 +1,153 @@
+/* ============================================================
+   References — Motherboard Campaign Wiki
+   Arc info, embedded tracks, external links.
+   ============================================================ */
+
+/* ── Reference sections ───────────────────────────────────── */
+
+.ref-section {
+	margin-bottom: var(--sp-12);
+}
+
+.ref-section__heading {
+	font-family: var(--font-display);
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--text-primary);
+	margin-bottom: var(--sp-6);
+	padding-bottom: var(--sp-3);
+	border-bottom: 1px solid var(--surface-border);
+}
+
+/* ── Arc info block ───────────────────────────────────────── */
+
+.arc-info {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-2);
+	margin-bottom: var(--sp-8);
+}
+
+.arc-info__label {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--text-secondary);
+}
+
+.arc-info__value {
+	font-family: var(--font-display);
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
+}
+
+/* ── Track grid ───────────────────────────────────────────── */
+
+.track-grid {
+	display: grid;
+	gap: var(--sp-6);
+}
+
+@media (min-width: 768px) {
+	.track-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.track-card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-3);
+}
+
+.track-card__label {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.track-card__label--opening {
+	color: var(--phosphor);
+	text-shadow: var(--glow-text-p);
+}
+
+.track-card__label--closing {
+	color: var(--amber);
+	text-shadow: var(--glow-text-a);
+}
+
+.track-card__title {
+	font-size: 0.95rem;
+	color: var(--text-primary);
+}
+
+.track-card__artist {
+	font-size: 0.85rem;
+	color: var(--text-secondary);
+	margin-top: -var(--sp-1);
+}
+
+/* ── Embedded video ───────────────────────────────────────── */
+
+.video-embed-wrap {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	border: 1px solid var(--surface-border);
+}
+
+.video-embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* ── Reference links ──────────────────────────────────────── */
+
+.ref-links {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-3);
+}
+
+.ref-link {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-1);
+	padding: var(--sp-4);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-md);
+	text-decoration: none;
+	transition:
+		border-color var(--transition-fast),
+		background-color var(--transition-fast);
+}
+
+.ref-link:hover {
+	border-color: var(--phosphor-border);
+	background-color: var(--phosphor-fill);
+}
+
+.ref-link__title {
+	font-family: var(--font-mono);
+	font-size: 0.9rem;
+	color: var(--phosphor);
+}
+
+.ref-link__desc {
+	font-size: 0.85rem;
+	color: var(--text-secondary);
+}
