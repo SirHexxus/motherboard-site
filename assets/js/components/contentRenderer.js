@@ -21,7 +21,8 @@ export const render_session_list = (container, sessions) => {
 
   const html = sorted.map((s) => {
     const is_complete = s.status === 'complete';
-    const modifier = is_complete ? 'session-entry--complete' : 'session-entry--upcoming';
+    const is_in_prep = s.status === 'in-prep';
+    const modifier = is_complete ? 'session-entry--complete' : is_in_prep ? 'session-entry--in-prep' : 'session-entry--upcoming';
 
     const highlights_html = s.highlights && s.highlights.length
       ? `<div class="session-entry__highlights">
@@ -43,10 +44,12 @@ export const render_session_list = (container, sessions) => {
       ? s.tags.map((t) => `<span class="badge badge--muted">${escape_html(t)}</span>`).join('')
       : '';
 
-    // Complete = cherenkov badge (calm, it's history); upcoming = amber (warning)
+    // Complete = cherenkov (calm, it's history); in-prep = phosphor (active, being built); upcoming = amber (warning)
     const status_badge = is_complete
       ? '<span class="badge badge--cherenkov">Complete</span>'
-      : '<span class="badge badge--amber">Upcoming</span>';
+      : is_in_prep
+        ? '<span class="badge badge--phosphor">In Prep</span>'
+        : '<span class="badge badge--amber">Upcoming</span>';
 
     return `
       <article class="session-entry ${modifier}">
