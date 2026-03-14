@@ -61,14 +61,14 @@
       "id": "settlements",
       "title": "Settlements",
       "accent": null,
-      "body": "Named locations the party knows about or has heard referenced.\n\nArgent — Current campaign base. Walled city, Loyalist/Unionist tension, Fury pressure from outside.\n\nCalcarus — Another walled city. Known by reputation; not yet visited.\n\nNorthern Oracle — Referred to in regional context. Nature unclear to the party.\n\nSwitch Withawick — A village. Named but not yet visited.\n\nCarrowcroft Walkaway — A village. Named but not yet visited.\n\nThe May Trader — A traveling merchant vessel or walking-city class structure. Heard of but not encountered.\n\nThe Library — A known Old World Site. Rumored to contain pre-Calamity records. Scholars like Jerome have heard of it.\n\nNereidus — Referenced in Network lore. Status and location unknown to the party.",
+      "body": "Named locations the party knows about or has heard referenced.\n\nArgent — Current campaign base. Walled city, Loyalist/Unionist tension, Fury pressure from outside.\n\nCalcarus — Another walled city. Known by reputation; not yet visited.\n\nNorthern Oracle — Referred to in regional context. Nature unclear to the party.\n\nSwitch Withawick — A village. Named but not yet visited.\n\nCarrowcroft Walkaway — A Walking City. Named but not yet visited.\n\nThe May Trader — A Walking City. Named but not yet encountered.\n\nThe Library — An Old World Site with a village that has grown up around it. Rumored to contain pre-Calamity records. Scholars like Jerome have heard of it.\n\nNereidus — Referenced in Network lore. Status and location unknown to the party.",
       "tags": ["settlements", "locations", "world"]
     },
     {
       "id": "central-network-authority",
       "title": "The Central Network Authority",
       "accent": "cherenkov",
-      "body": "Before the Calamity, the Central Network Authority built and maintained the Network infrastructure that still underlies Echo Vale. The CNA is not a living institution — it ended with the old world. What survives are its artifacts: facilities, maintenance manuals, and the hexagonal seal that appears on official CNA infrastructure.\n\nTo most people in Echo Vale, the CNA is mythology. Scholars know the name from recovered documents. True believers in the Motherboard faith associate the Network's origins with something sacred.\n\nThe hexagonal sigil the party found on the factory payment terminal in Session 2 bears this seal. What the connection means — and whether the CNA's infrastructure is truly abandoned — is an open question.",
+      "body": "Before the Calamity, the Central Network Authority built and maintained the Network infrastructure that still underlies Echo Vale. The CNA is not a living institution — it ended with the old world. What survives are its artifacts: facilities, maintenance manuals, and a distinctive institutional seal that appears on official CNA infrastructure.\n\nTo most people in Echo Vale, the CNA is mythology. Scholars know the name from recovered documents. True believers in the Motherboard faith associate the Network's origins with something sacred.\n\nWhether the CNA's infrastructure is truly abandoned — or merely dormant — is an open question.",
       "tags": ["network", "history", "mystery", "cna"]
     },
     {
