@@ -81,3 +81,9 @@
 	color: var(--cherenkov);
 	white-space: nowrap;
 }
+
+/* Threat tier color coding — mirrors Remnant color cycle */
+.remnant-row--low    td:last-child { color: var(--phosphor); }
+.remnant-row--medium td:last-child { color: var(--cherenkov); }
+.remnant-row--high   td:last-child { color: var(--amber); }
+.remnant-row--critical td:last-child { color: var(--fury); }
