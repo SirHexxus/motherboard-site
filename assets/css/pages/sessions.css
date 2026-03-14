@@ -52,6 +52,13 @@
 	margin-bottom: var(--sp-1);
 }
 
+.session-entry__subtitle {
+	font-size: 0.85rem;
+	color: var(--text-secondary);
+	font-style: italic;
+	margin-bottom: var(--sp-1);
+}
+
 .session-entry__date {
 	font-family: var(--font-mono);
 	font-size: 0.75rem;

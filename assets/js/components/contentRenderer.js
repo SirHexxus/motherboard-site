@@ -57,6 +57,7 @@ export const render_session_list = (container, sessions) => {
           <div>
             <p class="session-entry__number">Session ${escape_html(String(s.number))}</p>
             <h2 class="session-entry__title">${escape_html(s.title)}</h2>
+            ${s.subtitle ? `<p class="session-entry__subtitle">${escape_html(s.subtitle)}</p>` : ''}
             <time class="session-entry__date" datetime="${escape_html(s.date)}">
               ${format_date(s.date)}
             </time>

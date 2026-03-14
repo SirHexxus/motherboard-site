@@ -3,7 +3,8 @@
     {
       "id": "session-1",
       "number": 1,
-      "title": "The Offer You Can't Refuse",
+      "title": "First Sound",
+      "subtitle": "The Offer You Can't Refuse",
       "date": "2026-01-17",
       "status": "complete",
       "summary": "Session 0 with roleplay. Mac the Scrap Jack called the party to his shop. The Priv was already there — a clandestine meeting, not an accident. She gave them the job. No one left happy, but everyone left with a contract.",
@@ -19,7 +20,8 @@
     {
       "id": "session-2",
       "number": 2,
-      "title": "The Factory Run",
+      "title": "The Source",
+      "subtitle": "The Factory Run",
       "date": "2026-02-28",
       "status": "complete",
       "summary": "The party executed the factory job. A tense picket line, a narrow combat victory, and the discovery of something no one expected — a Remnant named BR, restrained in the testing bay, fighting something from the inside. The party chose to help. Mac got nothing — he just doesn't know it yet. Eight Fear came home with them.",
@@ -38,8 +40,8 @@
     {
       "id": "session-3",
       "number": 3,
-      "title": "TBD",
-      "date": "TBD",
+      "title": "Return",
+      "date": "2026-03-14",
       "status": "in-prep",
       "summary": "BR is in party custody, condition suppressed and clock ticking. The destination: Jerome's Home Terminal, somewhere through the maintenance tunnels beneath Argent. Mac the Scrap Jack doesn't know he was stiffed yet — but the Closed Gate order makes his smuggling routes the party's only way out. He will move.",
       "highlights": [],
