@@ -115,6 +115,57 @@
 	border: none;
 }
 
+/* ── Touchstones ──────────────────────────────────────────── */
+
+.touchstone-grid {
+	display: grid;
+	gap: var(--sp-3);
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+	.touchstone-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1024px) {
+	.touchstone-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.touchstone-card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sp-2);
+	padding: var(--sp-4);
+	border: 1px solid var(--surface-border);
+	border-radius: var(--radius-md);
+	text-decoration: none;
+	transition:
+		border-color var(--transition-fast),
+		background-color var(--transition-fast);
+}
+
+.touchstone-card:hover {
+	border-color: var(--cherenkov-border);
+	background-color: var(--cherenkov-fill);
+}
+
+.touchstone-card__title {
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	color: var(--cherenkov);
+	text-shadow: var(--glow-text-c);
+}
+
+.touchstone-card__note {
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+	line-height: 1.5;
+}
+
 /* ── Reference links ──────────────────────────────────────── */
 
 .ref-links {
