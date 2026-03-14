@@ -51,6 +51,41 @@
       "tags": ["economy", "scrap", "world"]
     },
     {
+      "id": "environment-types",
+      "title": "Environment Types",
+      "accent": null,
+      "body": "Echo Vale is not a uniform landscape. Five distinct zone types define the territory, each with its own tone and rules.\n\nThe Wilds are untamed territory outside all walls — Fury-heavy, resource-rich, and dangerous. Travel through the Wilds is always a risk calculation.\n\nVillages are small, undefended settlements. Community economies, no standing walls, dependent on reputation and relationships for protection. Warm in tone; fragile in practice.\n\nWalled Cities like Argent are fortified population centers. Faction politics, formal economies, the Scrap trade at scale. Most of the campaign's current action is here.\n\nWalking Cities are mobile fortresses — massive mechanical structures that move across the Vale. Rare, self-contained, and politically independent. The party has not encountered one.\n\nOld World Sites are ruins and facilities from before the Calamity — factories, data repositories, infrastructure nodes. Dangerous, loot-heavy, and full of things that shouldn't still be running. The factory from Session 2 was one of these.",
+      "tags": ["setting", "zones", "world"]
+    },
+    {
+      "id": "settlements",
+      "title": "Settlements",
+      "accent": null,
+      "body": "Named locations the party knows about or has heard referenced.\n\nArgent — Current campaign base. Walled city, Loyalist/Unionist tension, Fury pressure from outside.\n\nCalcarus — Another walled city. Known by reputation; not yet visited.\n\nNorthern Oracle — Referred to in regional context. Nature unclear to the party.\n\nSwitch Withawick — A village. Named but not yet visited.\n\nCarrowcroft Walkaway — A village. Named but not yet visited.\n\nThe May Trader — A traveling merchant vessel or walking-city class structure. Heard of but not encountered.\n\nThe Library — A known Old World Site. Rumored to contain pre-Calamity records. Scholars like Jerome have heard of it.\n\nNereidus — Referenced in Network lore. Status and location unknown to the party.",
+      "tags": ["settlements", "locations", "world"]
+    },
+    {
+      "id": "central-network-authority",
+      "title": "The Central Network Authority",
+      "accent": "cherenkov",
+      "body": "Before the Calamity, the Central Network Authority built and maintained the Network infrastructure that still underlies Echo Vale. The CNA is not a living institution — it ended with the old world. What survives are its artifacts: facilities, maintenance manuals, and the hexagonal seal that appears on official CNA infrastructure.\n\nTo most people in Echo Vale, the CNA is mythology. Scholars know the name from recovered documents. True believers in the Motherboard faith associate the Network's origins with something sacred.\n\nThe hexagonal sigil the party found on the factory payment terminal in Session 2 bears this seal. What the connection means — and whether the CNA's infrastructure is truly abandoned — is an open question.",
+      "tags": ["network", "history", "mystery", "cna"]
+    },
+    {
+      "id": "professions-guilds",
+      "title": "Professions & Guilds",
+      "accent": null,
+      "body": "Four organized groups shape how skilled labor and knowledge operate in Echo Vale.\n\nTechnomancers are practitioners who work with Kohd and living Remnant systems — closer to surgeons than engineers. Rare. Jerome's work edges toward this territory.\n\nMachinists are the broader engineering class — people who maintain, repair, and repurpose old-world hardware. The Scrap Economy runs through them. Spyke's background is here.\n\nPilgrims of the Spire are followers of the Motherboard faith who travel to Network nodes and relay stations. Jerome is an academic affiliate of this tradition, though not a wandering pilgrim himself.\n\nTower Watch is the organized military and security structure in walled cities. Argent's Tower Watch maintains the walls, manages the gates, and coordinates defense against Fury incursions. They are not a faction — they nominally serve the city, though factions compete for influence over them.",
+      "tags": ["professions", "guilds", "world"]
+    },
+    {
+      "id": "remnant-types",
+      "title": "Remnant Types",
+      "accent": "cherenkov",
+      "body_html": "<p>Remnants are not uniform. The old world built them for different purposes, and their designs reflect that. The party's working taxonomy, derived from field observation and Jerome's academic training:</p><table class=\"remnant-table\"><thead><tr><th>Designation</th><th>Morphology</th><th>Original Function</th><th>Threat Tier</th></tr></thead><tbody><tr><td>Builder</td><td>Humanoid, medium</td><td>General construction and assembly</td><td>Low</td></tr><tr><td>Fabricator</td><td>Stationary or slow-moving, arm-heavy</td><td>Precision manufacture</td><td>Low</td></tr><tr><td>Foreman</td><td>Humanoid, larger — command posture</td><td>Oversee and coordinate worker-class units</td><td>Medium</td></tr><tr><td>Overseer</td><td>Variable — often elevated or mobile platform</td><td>Facility-wide supervision and enforcement</td><td>Medium–High</td></tr><tr><td>Crawler</td><td>Low-profile, multi-limb</td><td>Maintenance in confined infrastructure</td><td>Medium</td></tr><tr><td>Creeper</td><td>Small, fast, multi-limb</td><td>Surveillance and sensor relay</td><td>Low–Medium</td></tr><tr><td>Stalker</td><td>Quadruped or fast bipedal</td><td>Patrol and threat response</td><td>High</td></tr><tr><td>Behemoth</td><td>Massive — chassis often modified by Fury growth</td><td>Heavy labor or siege function</td><td>Very High</td></tr></tbody></table><p class=\"text-secondary\" style=\"margin-top: 0.75rem; font-size: 0.85rem;\">BR-31489KJ8945 is a Foreman-class unit. The factory Remnants in Session 2 were primarily Builder and Fabricator class, with one Foreman.</p>",
+      "tags": ["remnants", "taxonomy", "reference"]
+    },
+    {
       "id": "glossary",
       "title": "Glossary",
       "accent": null,

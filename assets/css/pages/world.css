@@ -48,3 +48,36 @@
 	gap: var(--sp-2);
 	margin-top: var(--sp-4);
 }
+
+/* ── Remnant taxonomy table ───────────────────────────────── */
+
+.remnant-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.85rem;
+	margin-top: var(--sp-3);
+}
+
+.remnant-table th {
+	font-family: var(--font-mono);
+	font-size: 0.7rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--text-secondary);
+	text-align: left;
+	padding: var(--sp-2) var(--sp-3);
+	border-bottom: 1px solid var(--surface-border);
+}
+
+.remnant-table td {
+	color: var(--text-secondary);
+	padding: var(--sp-2) var(--sp-3);
+	border-bottom: 1px solid var(--surface-border);
+	vertical-align: top;
+}
+
+.remnant-table td:first-child {
+	font-family: var(--font-mono);
+	color: var(--cherenkov);
+	white-space: nowrap;
+}
